@@ -26,6 +26,12 @@ import ReceitaPR from "./PR";
 import ReceitaSC from "./SC";
 import ReceitaRS from "./RS";
 
+import ReceitaGO from "./GO";
+import ReceitaMT from "./MT";
+import ReceitaMS from "./MS";
+import ReceitaDF from "./DF";
+
+
 import Typography from '@mui/material/Typography';
 
 export default function App() {
@@ -114,9 +120,16 @@ function Content() {
     <main className={`${transitionStage}`} onAnimationEnd={animate} style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "100vw", position: "absolute", width: "100%", top: "0px", backgroundColor: "transparent"}}>
 
         <Routes location={displayLocation}>
+
             <Route path="/pr" element={<ReceitaPR/>} />   
             <Route path="/sc" element={<ReceitaSC/>} />   
             <Route path="/rs" element={<ReceitaRS/>} />   
+
+            <Route path="/go" element={<ReceitaGO/>} />   
+            <Route path="/mt" element={<ReceitaMT/>} />   
+            <Route path="/ms" element={<ReceitaMS/>} />   
+            <Route path="/df" element={<ReceitaDF/>} />   
+
         </Routes>
     </main>
 
