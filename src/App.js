@@ -12,6 +12,9 @@ import "@fontsource/cookie";
 import "./styles.css";
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+
+import SEO from "./SEO";
+
 import Logo from './logo.svg'
 import Restaurant from './restaurant.svg'
 
@@ -83,15 +86,17 @@ function Content() {
         }
     }
 
-  return (
+    return (
     <>
     <header style={{borderBottom: "2px solid #BE952B"}}>
         <Routes location={displayLocation}>
             <Route path="*" element={
                 <Container maxWidth="md" style={{paddingLeft: 0, paddingRight: 0}}>
                     <Box style={{position: "relative", width: '100%', height: '209px', minWidth: "320px", display: "flex", flexDirection: "row", alignItems:"center", justifyContent: "space-between"}} >
-                        <img style={{ minWidth: "300px" }} src={Logo} alt={"O Que o Brasil tem de ... + Delicioso"} />
-                        <img src={Restaurant} style={{position: "absolute", width: '80px', right: "40px", top: "-6px", background: "none"}} alt={"Brasil"} />
+                        <Link to="/">
+                            <img style={{ minWidth: "300px" }} src={Logo} alt={"O Que o Brasil tem de ... + Delicioso"} />
+                            <img src={Restaurant} style={{position: "absolute", width: '80px', right: "40px", top: "-6px", background: "none"}} alt={"Brasil"} />
+                        </Link>
                     </Box>
                 </Container>
             } />   
@@ -102,36 +107,74 @@ function Content() {
         <Routes location={displayLocation}>
             <Route path="/" element={
             <>
-                <Typography variant="p" align={'center'} style={{fontSize: '20px', color: '#fff', marginTop: '12px', fontFamily: "Inter Variable, sans-serif", background: "none"}}>Selecione uma região no mapa</Typography>
+                <SEO
+                    title={"O Que o Brasil tem de... + Delicioso"}
+                    description={"Um país plural cheio de cores, culturas e sabores."}
+                    name={"Banca do Ramon"}
+                    type={"article"} />
+                <Typography variant="p" align={'center'} style={{fontSize: '20px', color: '#fff', marginTop: '12px', fontFamily: "Inter Variable, sans-serif", background: "none"}}>
+                    Um país plural cheio de cores, culturas e sabores.
+                </Typography>
+                <Typography variant="p" align={'center'} style={{fontSize: '20px', color: '#fff', marginTop: '12px', fontFamily: "Inter Variable, sans-serif", background: "none"}}>
+                    E para homenagear nossos pratos típicos, criamos um material que vai te ajudar a visitar o Brasil sem sair da cozinha.
+                </Typography>                
+                <Typography variant="p" align={'center'} style={{fontSize: '20px', color: '#fff', marginTop: '12px', fontFamily: "Inter Variable, sans-serif", background: "none"}}>
+                    Selecione uma região no mapa
+                </Typography>
                 <Brasil />
             </>
             } />
             <Route path="/norte" element={
-            <>
+            <>                
+                <SEO
+                    title={"Região Norte"}
+                    description={"O Que o Brasil tem de... + Delicioso."}
+                    name={"Banca do Ramon"}
+                    type={"article"} />
                 <RegiaoNorte/>
                 <Typography variant="p" align={'center'} style={{fontSize: '20px', color: '#fff', marginTop: '12px', fontFamily: "Inter Variable, sans-serif", position: "absolute", background: "none"}}>Selecione um estado</Typography>
             </>
             } />    
             <Route path="/nordeste" element={
-            <>
+            <>                
+                <SEO
+                    title={"Região Nordeste"}
+                    description={"O Que o Brasil tem de... + Delicioso."}
+                    name={"Banca do Ramon"}
+                    type={"article"} />
                 <RegiaoNordeste/>
                 <Typography variant="p" align={'center'} style={{fontSize: '20px', color: '#fff', marginTop: '12px', fontFamily: "Inter Variable, sans-serif", position: "absolute", background: "none"}}>Selecione um estado</Typography>
             </>
             } />   
             <Route path="/centro-oeste" element={
             <>
+                <SEO
+                    title={"Região Centro-Oeste"}
+                    description={"O Que o Brasil tem de... + Delicioso."}
+                    name={"Banca do Ramon"}
+                    type={"article"} />            
                 <RegiaoCentroOeste/>
                 <Typography variant="p" align={'center'} style={{fontSize: '20px', color: '#fff', marginTop: '12px', fontFamily: "Inter Variable, sans-serif", position: "absolute", background: "none"}}>Selecione um estado</Typography>
             </>
             } />   
             <Route path="/sudeste" element={
             <>
+                <SEO
+                    title={"Região Sudeste"}
+                    description={"O Que o Brasil tem de... + Delicioso."}
+                    name={"Banca do Ramon"}
+                    type={"article"} />            
                 <RegiaoSudeste/>
                 <Typography variant="p" align={'center'} style={{fontSize: '20px',color: '#fff', marginTop: '12px', fontFamily: "Inter Variable, sans-serif", position: "absolute", background: "none"}}>Selecione um estado</Typography>
             </>
             } />   
             <Route path="/sul" element={
             <>
+                <SEO
+                    title={"Região Sul"}
+                    description={"O Que o Brasil tem de... + Delicioso."}
+                    name={"Banca do Ramon"}
+                    type={"article"} />            
                 <RegiaoSul/>
                 <Typography variant="p" align={'center'} style={{fontSize: '20px', color: '#fff', marginTop: '12px', fontFamily: "Inter Variable, sans-serif", position: "absolute", background: "none"}}>Selecione um estado</Typography>
             </>
