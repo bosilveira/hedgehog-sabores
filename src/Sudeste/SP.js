@@ -23,11 +23,11 @@ export default function ReceitaSP() {
     <>
     <Container maxWidth="md" className={"receita"}>
         <Box className={"receita-header"}>
-            <img className={"receita-prato"} src={Prato} alt={"Virado à Paulista - São Paulo"} />
+            <img className={"receita-prato"} src={Prato} alt={"Virado à Paulista - São Paulo"}/>
             <img className={"receita-bookmark"} src={Bookmark} alt={"São Paulo - Sudeste"}/>
             <Voltar url="/sudeste"/>
         </Box>
-        <Box className={"receita-titulo sudeste"} >
+        <Box className={"receita-titulo sudeste"}>
             <Typography variant="h1">
                 São Paulo
             </Typography>
@@ -36,25 +36,25 @@ export default function ReceitaSP() {
             </Typography>
         </Box>
 
-        <Box className={"ingredientes sudeste"} >
+        <Box className={"ingredientes sudeste"}>
             <img src={Icone} alt={""}/>
             <Typography variant="h3">
                 Ingredientes
             </Typography>
-            <Typography>01 maço de couve com folhas cortadas finas</Typography>
-            <Typography>01 dente de alho</Typography>
-            <Typography>300g de bacon </Typography>
-            <Typography>200g de torresmo</Typography>
-            <Typography>04 ovos</Typography>
-            <Typography>250g feijão carioca</Typography>
-            <Typography>03 copos de arroz frito </Typography>
-            <Typography>(de preferência feito com banha)</Typography>
-            <Typography>04 linguiças</Typography>
-            <Typography>04 bistecas de porco </Typography>
-            <Typography>Farinha de milho</Typography>
+            <Typography variant="body1">01 maço de couve com folhas cortadas finas</Typography>
+            <Typography variant="body1">01 dente de alho</Typography>
+            <Typography variant="body1">300g de bacon </Typography>
+            <Typography variant="body1">200g de torresmo</Typography>
+            <Typography variant="body1">04 ovos</Typography>
+            <Typography variant="body1">250g feijão carioca</Typography>
+            <Typography variant="body1">03 copos de arroz frito </Typography>
+            <Typography variant="body1">(de preferência feito com banha)</Typography>
+            <Typography variant="body1">04 linguiças</Typography>
+            <Typography variant="body1">04 bistecas de porco </Typography>
+            <Typography variant="body1">Farinha de milho</Typography>
         </Box>
     
-        <Box className={"preparo-top sudeste"} >
+        <Box className={"preparo-top sudeste"}>
             <Typography variant="h3">
                 Modo de Preparo
             </Typography>
@@ -94,7 +94,7 @@ export default function ReceitaSP() {
     
         <Box className={"preparo-bottom sudeste"}/>
 
-        <Box className={"harmonizacao sudeste"} >
+        <Box className={"harmonizacao sudeste"}>
             <Typography variant="h3">
                 Harmonização
             </Typography>
@@ -115,7 +115,7 @@ export default function ReceitaSP() {
                     ALTOS DE LAS HORMIGAS MALBEC RESERVE
                 </Link>
             </Box>
-            <Chip label="Você só encontra aqui!" component="p" />
+            <Chip label="Você só encontra aqui!" component="p"/>
         </Box>
 
     </Container>

@@ -24,11 +24,11 @@ export default function ReceitaMA() {
         <>
             <Container maxWidth="md" className={"receita"}>
                 <Box className={"receita-header"}>
-                    <img className={"receita-prato"} src={Prato} alt={"Arroz de Cuxá - Maranhão"} />
+                    <img className={"receita-prato"} src={Prato} alt={"Arroz de Cuxá - Maranhão"}/>
                     <img className={"receita-bookmark"} src={Bookmark} alt={"Maranhão - Nordeste"}/>
                     <Voltar url="/nordeste"/>
                 </Box>
-                <Box className={"receita-titulo nordeste"} >
+                <Box className={"receita-titulo nordeste"}>
                     <Typography variant="h1">
                         Maranhão
                     </Typography>
@@ -42,18 +42,18 @@ export default function ReceitaMA() {
                     <Typography variant="h3">
                         Ingredientes
                     </Typography>
-                    <Typography>Vinagreira (erva verde meio amarga)</Typography>
-                    <Typography>01 tomate picado</Typography>
-                    <Typography>01 cebola picada</Typography>
-                    <Typography>01 Pimentão Picado</Typography>
-                    <Typography>Pimenta-de-cheiro a gosto</Typography>
-                    <Typography>150g de camarão seco</Typography>
-                    <Typography>Gergelim a gosto</Typography>
-                    <Typography>½ kg de arroz branco cozido</Typography>
-                    <Typography>Azeite</Typography>
+                    <Typography variant="body1">Vinagreira (erva verde meio amarga)</Typography>
+                    <Typography variant="body1">01 tomate picado</Typography>
+                    <Typography variant="body1">01 cebola picada</Typography>
+                    <Typography variant="body1">01 Pimentão Picado</Typography>
+                    <Typography variant="body1">Pimenta-de-cheiro a gosto</Typography>
+                    <Typography variant="body1">150g de camarão seco</Typography>
+                    <Typography variant="body1">Gergelim a gosto</Typography>
+                    <Typography variant="body1">½ kg de arroz branco cozido</Typography>
+                    <Typography variant="body1">Azeite</Typography>
                 </Box>
 
-                <Box className={"preparo-top nordeste"} >
+                <Box className={"preparo-top nordeste"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -71,7 +71,7 @@ export default function ReceitaMA() {
 
                 <Box className={"preparo-bottom nordeste"}/>
 
-                <Box className={"harmonizacao nordeste"} >
+                <Box className={"harmonizacao nordeste"}>
                     <Typography variant="h3">
                         Harmonização
                     </Typography>
@@ -92,7 +92,7 @@ export default function ReceitaMA() {
                             PÉPPOLI CHIANTI CLASSICO
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

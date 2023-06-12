@@ -21,11 +21,11 @@ export default function ReceitaAC() {
         <>
             <Container maxWidth="md" className={"receita"}>
                 <Box className={"receita-header"}>
-                    <img className={"receita-prato"} src={Prato} alt={"Bolo de Pupunha - Acre"} />
+                    <img className={"receita-prato"} src={Prato} alt={"Bolo de Pupunha - Acre"}/>
                     <img className={"receita-bookmark"} src={Bookmark} alt={"Acre - Norte"}/>
                     <Voltar url="/norte"/>
                 </Box>
-                <Box className={"receita-titulo norte"} >
+                <Box className={"receita-titulo norte"}>
                     <Typography variant="h1">
                         Acre
                     </Typography>
@@ -34,32 +34,32 @@ export default function ReceitaAC() {
                     </Typography>
                 </Box>
 
-                <Box className={"ingredientes norte"} >
+                <Box className={"ingredientes norte"}>
                     <img src={Icone} alt={""}/>
                     <Typography variant="h3">
                         Ingredientes
                     </Typography>
-                    <Typography>02 xícaras de pupunha cozida passada</Typography>
-                    <Typography>no processador ou em uma peneira</Typography>
-                    <Typography>08 colheres de farinha de trigo sem fermento</Typography>
-                    <Typography>02 xícaras de leite de coco ou leite comum</Typography>
-                    <Typography>01 colher (sopa) de fermento</Typography>
-                    <Typography>250g de manteiga</Typography>
-                    <Typography>06 ovos</Typography>
-                    <Typography>02 xícaras de açúcar</Typography>
-                    <Typography>&nbsp;</Typography>
-                    <Typography>Calda:</Typography>
-                    <Typography>½ xícara de água</Typography>
-                    <Typography>01 xícara de açúcar</Typography>
-                    <Typography>03 colheres (sopa) pupunha ralada</Typography>
-                    <Typography>Cravinhos a gosto</Typography>
-                    <Typography>&nbsp;</Typography>
-                    <Typography>Crocantes de castanha do Brasil:</Typography>
-                    <Typography>04 colheres de sopa de castanha moída</Typography>
-                    <Typography>02 colheres de açúcar</Typography>
+                    <Typography variant="body1">02 xícaras de pupunha cozida passada</Typography>
+                    <Typography variant="body1">no processador ou em uma peneira</Typography>
+                    <Typography variant="body1">08 colheres de farinha de trigo sem fermento</Typography>
+                    <Typography variant="body1">02 xícaras de leite de coco ou leite comum</Typography>
+                    <Typography variant="body1">01 colher (sopa) de fermento</Typography>
+                    <Typography variant="body1">250g de manteiga</Typography>
+                    <Typography variant="body1">06 ovos</Typography>
+                    <Typography variant="body1">02 xícaras de açúcar</Typography>
+                    <Typography variant="body1">&nbsp;</Typography>
+                    <Typography variant="body1">Calda:</Typography>
+                    <Typography variant="body1">½ xícara de água</Typography>
+                    <Typography variant="body1">01 xícara de açúcar</Typography>
+                    <Typography variant="body1">03 colheres (sopa) pupunha ralada</Typography>
+                    <Typography variant="body1">Cravinhos a gosto</Typography>
+                    <Typography variant="body1">&nbsp;</Typography>
+                    <Typography variant="body1">Crocantes de castanha do Brasil:</Typography>
+                    <Typography variant="body1">04 colheres de sopa de castanha moída</Typography>
+                    <Typography variant="body1">02 colheres de açúcar</Typography>
                 </Box>
 
-                <Box className={"preparo-top norte"} >
+                <Box className={"preparo-top norte"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -134,7 +134,7 @@ export default function ReceitaAC() {
                             TAYLOR'S FINE WHITE PORT
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

@@ -23,11 +23,11 @@ export default function ReceitaPA() {
         <>
             <Container maxWidth="md" className={"receita"}>
                 <Box className={"receita-header"}>
-                    <img className={"receita-prato"} src={Prato} alt={"Pato no Tucupi - Pará"} />
+                    <img className={"receita-prato"} src={Prato} alt={"Pato no Tucupi - Pará"}/>
                     <img className={"receita-bookmark"} src={Bookmark} alt={"Pará - Norte"}/>
                     <Voltar url="/norte"/>
                 </Box>
-                <Box className={"receita-titulo norte"} >
+                <Box className={"receita-titulo norte"}>
                     <Typography variant="h1">
                         Pará
                     </Typography>
@@ -36,27 +36,27 @@ export default function ReceitaPA() {
                     </Typography>
                 </Box>
 
-                <Box className={"ingredientes norte"} >
+                <Box className={"ingredientes norte"}>
                     <img src={Icone} alt={""}/>
                     <Typography variant="h3">
                         Ingredientes
                     </Typography>
-                    <Typography>01 pato inteiro</Typography>
-                    <Typography>(aproximadamente 3kg)</Typography>
-                    <Typography>05 maços de jambú</Typography>
-                    <Typography>03 litros de tucupi</Typography>
-                    <Typography>02 cebolas picadas</Typography>
-                    <Typography>10 dentes de alho</Typography>
-                    <Typography>01 maço de chicória</Typography>
-                    <Typography>02 tomates</Typography>
-                    <Typography>02 limões</Typography>
-                    <Typography>Sal e pimenta-do-reino a gosto</Typography>
-                    <Typography>01 colher (sopa) de manteiga</Typography>
-                    <Typography>02 colheres (sopa) de azeite</Typography>
-                    <Typography>Pimenta-de-cheiro a gosto</Typography>
+                    <Typography variant="body1">01 pato inteiro</Typography>
+                    <Typography variant="body1">(aproximadamente 3kg)</Typography>
+                    <Typography variant="body1">05 maços de jambú</Typography>
+                    <Typography variant="body1">03 litros de tucupi</Typography>
+                    <Typography variant="body1">02 cebolas picadas</Typography>
+                    <Typography variant="body1">10 dentes de alho</Typography>
+                    <Typography variant="body1">01 maço de chicória</Typography>
+                    <Typography variant="body1">02 tomates</Typography>
+                    <Typography variant="body1">02 limões</Typography>
+                    <Typography variant="body1">Sal e pimenta-do-reino a gosto</Typography>
+                    <Typography variant="body1">01 colher (sopa) de manteiga</Typography>
+                    <Typography variant="body1">02 colheres (sopa) de azeite</Typography>
+                    <Typography variant="body1">Pimenta-de-cheiro a gosto</Typography>
                 </Box>
 
-                <Box className={"preparo-top norte"} >
+                <Box className={"preparo-top norte"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -116,7 +116,7 @@ export default function ReceitaPA() {
                             BARBERA D'ASTI L'AVVOCATA
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

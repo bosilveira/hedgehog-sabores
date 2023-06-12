@@ -23,11 +23,11 @@ export default function ReceitaMS() {
         <>
             <Container maxWidth="md" className={"receita"}>
                 <Box className={"receita-header"}>
-                    <img className={"receita-prato"} src={Prato} alt={"Arroz Boliviano - Mato Grosso do Sul"} />
+                    <img className={"receita-prato"} src={Prato} alt={"Arroz Boliviano - Mato Grosso do Sul"}/>
                     <img className={"receita-bookmark"} src={Bookmark} alt={"Mato Grosso do Sul - Centro-Oeste"}/>
                     <Voltar url="/centro-oeste"/>
                 </Box>
-                <Box className={"receita-titulo centro-oeste"} >
+                <Box className={"receita-titulo centro-oeste"}>
                     <Typography variant="h1">
                         Mato Grosso do Sul
                     </Typography>
@@ -36,32 +36,32 @@ export default function ReceitaMS() {
                     </Typography>
                 </Box>
 
-                <Box className={"ingredientes centro-oeste"} >
+                <Box className={"ingredientes centro-oeste"}>
                     <img src={Icone} alt={""}/>
                     <Typography variant="h3">
                         Ingredientes
                     </Typography>
 
-                    <Typography>1kg de arroz</Typography>
-                    <Typography>1kg de carne moída (magra)</Typography>
-                    <Typography>2kg de batata</Typography>
-                    <Typography>02 latas de ervilha</Typography>
-                    <Typography>02 latas de milho verde</Typography>
-                    <Typography>01 dúzia de banana da terra</Typography>
-                    <Typography>50g de queijo parmesão ralado</Typography>
-                    <Typography>02 cebolas</Typography>
-                    <Typography>01 pimentão</Typography>
-                    <Typography>350g de extrato de tomate</Typography>
-                    <Typography>03 dentes de alho</Typography>
-                    <Typography>01 dúzia de ovos</Typography>
-                    <Typography>02 xícaras de chá de óleo</Typography>
-                    <Typography>100g de manteiga</Typography>
-                    <Typography>limão e tomate</Typography>
-                    <Typography>sal a gosto</Typography>
+                    <Typography variant="body1">1kg de arroz</Typography>
+                    <Typography variant="body1">1kg de carne moída (magra)</Typography>
+                    <Typography variant="body1">2kg de batata</Typography>
+                    <Typography variant="body1">02 latas de ervilha</Typography>
+                    <Typography variant="body1">02 latas de milho verde</Typography>
+                    <Typography variant="body1">01 dúzia de banana da terra</Typography>
+                    <Typography variant="body1">50g de queijo parmesão ralado</Typography>
+                    <Typography variant="body1">02 cebolas</Typography>
+                    <Typography variant="body1">01 pimentão</Typography>
+                    <Typography variant="body1">350g de extrato de tomate</Typography>
+                    <Typography variant="body1">03 dentes de alho</Typography>
+                    <Typography variant="body1">01 dúzia de ovos</Typography>
+                    <Typography variant="body1">02 xícaras de chá de óleo</Typography>
+                    <Typography variant="body1">100g de manteiga</Typography>
+                    <Typography variant="body1">limão e tomate</Typography>
+                    <Typography variant="body1">sal a gosto</Typography>
 
                 </Box>
 
-                <Box className={"preparo-top centro-oeste"} >
+                <Box className={"preparo-top centro-oeste"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -120,7 +120,7 @@ export default function ReceitaMS() {
                             GARZON TANNAT RESERVA
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

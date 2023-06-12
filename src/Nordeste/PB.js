@@ -28,7 +28,7 @@ export default function ReceitaPB() {
                     <img className={"receita-bookmark"} src={Bookmark} alt={"Paraíba - Nordeste"}/>
                     <Voltar url="/nordeste"/>
                 </Box>
-                <Box className={"receita-titulo nordeste"} >
+                <Box className={"receita-titulo nordeste"}>
                     <Typography variant="h1">
                         Paraíba
                     </Typography>
@@ -42,19 +42,19 @@ export default function ReceitaPB() {
                     <Typography variant="h3">
                         Ingredientes
                     </Typography>
-                    <Typography>250g de charque</Typography>
-                    <Typography>01 xícara de chá de feijão fradinho</Typography>
-                    <Typography>200g de bacon</Typography>
-                    <Typography>01 linguiça calabresa</Typography>
-                    <Typography>04 xícaras de chá de arroz branco</Typography>
-                    <Typography>200g de queijo coalho em cubos</Typography>
-                    <Typography>01 cebola picada</Typography>
-                    <Typography>02 dentes de alho picados</Typography>
-                    <Typography>01 folha de louro</Typography>
-                    <Typography>Sal, pimenta dedo-de-moça e salsinha a gosto</Typography>
+                    <Typography variant="body1">250g de charque</Typography>
+                    <Typography variant="body1">01 xícara de chá de feijão fradinho</Typography>
+                    <Typography variant="body1">200g de bacon</Typography>
+                    <Typography variant="body1">01 linguiça calabresa</Typography>
+                    <Typography variant="body1">04 xícaras de chá de arroz branco</Typography>
+                    <Typography variant="body1">200g de queijo coalho em cubos</Typography>
+                    <Typography variant="body1">01 cebola picada</Typography>
+                    <Typography variant="body1">02 dentes de alho picados</Typography>
+                    <Typography variant="body1">01 folha de louro</Typography>
+                    <Typography variant="body1">Sal, pimenta dedo-de-moça e salsinha a gosto</Typography>
                 </Box>
 
-                <Box className={"preparo-top nordeste"} >
+                <Box className={"preparo-top nordeste"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -98,7 +98,7 @@ export default function ReceitaPB() {
 
                 <Box className={"preparo-bottom nordeste"}/>
 
-                <Box className={"harmonizacao nordeste"} >
+                <Box className={"harmonizacao nordeste"}>
                     <Typography variant="h3">
                         Harmonização
                     </Typography>
@@ -111,7 +111,7 @@ export default function ReceitaPB() {
                             TAPADA DO CHAVES BRANCO
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

@@ -24,11 +24,11 @@ export default function ReceitaPE() {
         <>
             <Container maxWidth="md" className={"receita"}>
                 <Box className={"receita-header"}>
-                    <img className={"receita-prato"} src={Prato} alt={"Sarapatel - Pernambuco"} />
+                    <img className={"receita-prato"} src={Prato} alt={"Sarapatel - Pernambuco"}/>
                     <img className={"receita-bookmark"} src={Bookmark} alt={"Pernambuco - Nordeste"}/>
                     <Voltar url="/nordeste"/>
                 </Box>
-                <Box className={"receita-titulo nordeste"} >
+                <Box className={"receita-titulo nordeste"}>
                     <Typography variant="h1">
                         Pernambuco
                     </Typography>
@@ -42,21 +42,21 @@ export default function ReceitaPE() {
                     <Typography variant="h3">
                         Ingredientes
                     </Typography>
-                    <Typography>½ kg de sarapatel fresco em cubos</Typography>
-                    <Typography>01 cebola picada</Typography>
-                    <Typography>01 pimentão </Typography>
-                    <Typography>01 tomate sem pele e sem sementes picado</Typography>
-                    <Typography>04 dentes de alho amassados</Typography>
-                    <Typography>01 maço de coentro</Typography>
-                    <Typography>02 folhas de louro</Typography>
-                    <Typography>01 colher de sopa de cominho</Typography>
-                    <Typography>01 colher de sopa de colorau </Typography>
-                    <Typography>01 limão</Typography>
-                    <Typography>Azeite</Typography>
-                    <Typography>Sal e pimenta a gosto</Typography>
+                    <Typography variant="body1">½ kg de sarapatel fresco em cubos</Typography>
+                    <Typography variant="body1">01 cebola picada</Typography>
+                    <Typography variant="body1">01 pimentão </Typography>
+                    <Typography variant="body1">01 tomate sem pele e sem sementes picado</Typography>
+                    <Typography variant="body1">04 dentes de alho amassados</Typography>
+                    <Typography variant="body1">01 maço de coentro</Typography>
+                    <Typography variant="body1">02 folhas de louro</Typography>
+                    <Typography variant="body1">01 colher de sopa de cominho</Typography>
+                    <Typography variant="body1">01 colher de sopa de colorau </Typography>
+                    <Typography variant="body1">01 limão</Typography>
+                    <Typography variant="body1">Azeite</Typography>
+                    <Typography variant="body1">Sal e pimenta a gosto</Typography>
                 </Box>
 
-                <Box className={"preparo-top nordeste"} >
+                <Box className={"preparo-top nordeste"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -88,7 +88,7 @@ export default function ReceitaPE() {
 
                 <Box className={"preparo-bottom nordeste"}/>
 
-                <Box className={"harmonizacao nordeste"} >
+                <Box className={"harmonizacao nordeste"}>
                     <Typography variant="h3">
                         Harmonização
                     </Typography>
@@ -109,7 +109,7 @@ export default function ReceitaPE() {
                             DUE LUNE (NERO D'AVOLA + NERELLO MASCALESE)
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

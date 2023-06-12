@@ -24,11 +24,11 @@ export default function ReceitaRN() {
         <>
             <Container maxWidth="md" className={"receita"}>
                 <Box className={"receita-header"}>
-                    <img className={"receita-prato"} src={Prato} alt={"Sarapatel - Rio Grande do Norte"} />
+                    <img className={"receita-prato"} src={Prato} alt={"Sarapatel - Rio Grande do Norte"}/>
                     <img className={"receita-bookmark"} src={Bookmark} alt={"Rio Grande do Norte - Nordeste"}/>
                     <Voltar url="/nordeste"/>
                 </Box>
-                <Box className={"receita-titulo nordeste"} >
+                <Box className={"receita-titulo nordeste"}>
                     <Typography variant="h1">
                         Rio Grande do Norte
                     </Typography>
@@ -42,15 +42,15 @@ export default function ReceitaRN() {
                     <Typography variant="h3">
                         Ingredientes
                     </Typography>
-                    <Typography>01 xícara de arroz da terra ou arroz branco</Typography>
-                    <Typography>Leite em quantidade suficiente</Typography>
-                    <Typography>01 cebola picada</Typography>
-                    <Typography>02 dentes de alho picados</Typography>
-                    <Typography>Azeite</Typography>
-                    <Typography>Sal</Typography>
+                    <Typography variant="body1">01 xícara de arroz da terra ou arroz branco</Typography>
+                    <Typography variant="body1">Leite em quantidade suficiente</Typography>
+                    <Typography variant="body1">01 cebola picada</Typography>
+                    <Typography variant="body1">02 dentes de alho picados</Typography>
+                    <Typography variant="body1">Azeite</Typography>
+                    <Typography variant="body1">Sal</Typography>
                 </Box>
 
-                <Box className={"preparo-top nordeste"} >
+                <Box className={"preparo-top nordeste"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -86,7 +86,7 @@ export default function ReceitaRN() {
                 <Box className={"preparo-bottom nordeste"}/>
 
 
-                <Box className={"harmonizacao nordeste"} >
+                <Box className={"harmonizacao nordeste"}>
                     <Typography variant="h3">
                         Harmonização
                     </Typography>
@@ -99,7 +99,7 @@ export default function ReceitaRN() {
                             VALLE DE PASSOS
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

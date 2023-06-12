@@ -23,11 +23,11 @@ export default function ReceitaGO() {
         <>
             <Container maxWidth="md" className={"receita"}>
                 <Box className={"receita-header"}>
-                    <img className={"receita-prato"} src={Prato} alt={"Arroz com Pequi - Goiás"} />
+                    <img className={"receita-prato"} src={Prato} alt={"Arroz com Pequi - Goiás"}/>
                     <img className={"receita-bookmark"} src={Bookmark} alt={""}/>
                     <Voltar url="/centro-oeste"/>
                 </Box>
-                <Box className={"receita-titulo centro-oeste"} >
+                <Box className={"receita-titulo centro-oeste"}>
                     <Typography variant="h1">
                         Goiás
                     </Typography>
@@ -36,22 +36,22 @@ export default function ReceitaGO() {
                     </Typography>
                 </Box>
 
-                <Box className={"ingredientes centro-oeste"} >
+                <Box className={"ingredientes centro-oeste"}>
                     <img src={Icone} alt={""}/>
                     <Typography variant="h3">
                         Ingredientes
                     </Typography>
-                    <Typography>¼ de xícara de chá de óleo ou banha de porco</Typography>
-                    <Typography>½ litro de pequi lavado</Typography>
-                    <Typography>02 dentes de alho espremidos</Typography>
-                    <Typography>01 cebola grande picada</Typography>
-                    <Typography>02 xícaras de chá de arroz</Typography>
-                    <Typography>04 xícaras de chá de água quente</Typography>
-                    <Typography>sal a gosto</Typography>
-                    <Typography>pimenta-de-cheiro ou malagueta a gosto</Typography>
+                    <Typography variant="body1">¼ de xícara de chá de óleo ou banha de porco</Typography>
+                    <Typography variant="body1">½ litro de pequi lavado</Typography>
+                    <Typography variant="body1">02 dentes de alho espremidos</Typography>
+                    <Typography variant="body1">01 cebola grande picada</Typography>
+                    <Typography variant="body1">02 xícaras de chá de arroz</Typography>
+                    <Typography variant="body1">04 xícaras de chá de água quente</Typography>
+                    <Typography variant="body1">sal a gosto</Typography>
+                    <Typography variant="body1">pimenta-de-cheiro ou malagueta a gosto</Typography>
                 </Box>
 
-                <Box className={"preparo-top centro-oeste"} >
+                <Box className={"preparo-top centro-oeste"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -101,7 +101,7 @@ export default function ReceitaGO() {
                             ROYAL PALMEIRA
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

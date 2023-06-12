@@ -24,11 +24,11 @@ export default function ReceitaPI() {
         <>
             <Container maxWidth="md" className={"receita"}>
                 <Box className={"receita-header"}>
-                    <img className={"receita-prato"} src={Prato} alt={"Bode Assado - Piauí"} />
+                    <img className={"receita-prato"} src={Prato} alt={"Bode Assado - Piauí"}/>
                     <img className={"receita-bookmark"} src={Bookmark} alt={"Piauí - Nordeste"}/>
                     <Voltar url="/nordeste"/>
                 </Box>
-                <Box className={"receita-titulo nordeste"} >
+                <Box className={"receita-titulo nordeste"}>
                     <Typography variant="h1">
                         Piauí
                     </Typography>
@@ -42,16 +42,16 @@ export default function ReceitaPI() {
                     <Typography variant="h3">
                         Ingredientes
                     </Typography>
-                    <Typography>1kg de carne de bode</Typography>
-                    <Typography>5 cebolas em rodelas</Typography>
-                    <Typography>4 batatas cortadas em pedaços grandes</Typography>
-                    <Typography>2 tabletes de caldo de carne</Typography>
-                    <Typography>2 dentes de alho</Typography>
-                    <Typography>Sal e cominho a gosto</Typography>
-                    <Typography>Azeite</Typography>
+                    <Typography variant="body1">1kg de carne de bode</Typography>
+                    <Typography variant="body1">5 cebolas em rodelas</Typography>
+                    <Typography variant="body1">4 batatas cortadas em pedaços grandes</Typography>
+                    <Typography variant="body1">2 tabletes de caldo de carne</Typography>
+                    <Typography variant="body1">2 dentes de alho</Typography>
+                    <Typography variant="body1">Sal e cominho a gosto</Typography>
+                    <Typography variant="body1">Azeite</Typography>
                 </Box>
 
-                <Box className={"preparo-top nordeste"} >
+                <Box className={"preparo-top nordeste"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -80,7 +80,7 @@ export default function ReceitaPI() {
 
                 <Box className={"preparo-bottom nordeste"}/>
 
-                <Box className={"harmonizacao nordeste"} >
+                <Box className={"harmonizacao nordeste"}>
                     <Typography variant="h3">
                         Harmonização
                     </Typography>
@@ -101,7 +101,7 @@ export default function ReceitaPI() {
                             LAZULI CABERNET SAUVIGNON
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

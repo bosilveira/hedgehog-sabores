@@ -24,11 +24,11 @@ export default function ReceitaBA() {
         <>
             <Container maxWidth="md" className={"receita"}>
                 <Box className={"receita-header"}>
-                    <img className={"receita-prato"} src={Prato} alt={"Acarajé - Bahia"} />
+                    <img className={"receita-prato"} src={Prato} alt={"Acarajé - Bahia"}/>
                     <img className={"receita-bookmark"} src={Bookmark} alt={"Bahia - Nordeste"}/>
                     <Voltar url="/nordeste"/>
                 </Box>
-                <Box className={"receita-titulo nordeste"} >
+                <Box className={"receita-titulo nordeste"}>
                     <Typography variant="h1">
                         Bahia
                     </Typography>
@@ -42,15 +42,15 @@ export default function ReceitaBA() {
                     <Typography variant="h3">
                         Ingredientes
                     </Typography>
-                    <Typography>01kg de feijão fradinho quebrado</Typography>
-                    <Typography>300g de cebola</Typography>
-                    <Typography>01 colher de chá de gengibre ralado</Typography>
-                    <Typography>01 dente de alho</Typography>
-                    <Typography>01 colher de sobremesa de sal</Typography>
-                    <Typography>01L de dendê para fritar</Typography>
+                    <Typography variant="body1">01kg de feijão fradinho quebrado</Typography>
+                    <Typography variant="body1">300g de cebola</Typography>
+                    <Typography variant="body1">01 colher de chá de gengibre ralado</Typography>
+                    <Typography variant="body1">01 dente de alho</Typography>
+                    <Typography variant="body1">01 colher de sobremesa de sal</Typography>
+                    <Typography variant="body1">01L de dendê para fritar</Typography>
                 </Box>
 
-                <Box className={"preparo-top nordeste"} >
+                <Box className={"preparo-top nordeste"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -71,7 +71,7 @@ export default function ReceitaBA() {
 
                 <Box className={"preparo-bottom nordeste"}/>
 
-                <Box className={"harmonizacao nordeste"} >
+                <Box className={"harmonizacao nordeste"}>
                     <Typography variant="h3">
                         Harmonização
                     </Typography>
@@ -92,7 +92,7 @@ export default function ReceitaBA() {
                             PEQUEÑAS PRODUCCIONES SYRAH
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

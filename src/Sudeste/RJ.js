@@ -27,7 +27,7 @@ export default function ReceitaRJ() {
             <img className={"receita-bookmark"} src={Bookmark} alt={"Rio de Janeiro - Sudeste"}/>
             <Voltar url="/sudeste"/>
         </Box>
-        <Box className={"receita-titulo sudeste"} >
+        <Box className={"receita-titulo sudeste"}>
             <Typography variant="h1">
                 Rio de Janeiro
             </Typography>
@@ -36,28 +36,28 @@ export default function ReceitaRJ() {
             </Typography>
         </Box>
 
-        <Box className={"ingredientes sudeste"} >
+        <Box className={"ingredientes sudeste"}>
             <img src={Icone} alt={""}/>
             <Typography variant="h3">
                 Ingredientes
             </Typography>
-            <Typography>01kg de feijão preto</Typography>
-            <Typography>100g de carne seca</Typography>
-            <Typography>70g de orelha de porco</Typography>
-            <Typography>70g de rabo de porco</Typography>
-            <Typography>70g de pé de porco</Typography>
-            <Typography>100g de costelinha de porco</Typography>
-            <Typography>50g de lombo de porco</Typography>
-            <Typography>100g de paio</Typography>
-            <Typography>150g de linguiça </Typography>
-            <Typography>02 cebolas picadas </Typography>
-            <Typography>01 maço de cebolinha verde picado</Typography>
-            <Typography>03 folhas de louro</Typography>
-            <Typography>06 dentes de alho</Typography>
-            <Typography>Sal e pimenta do reino a gosto</Typography>
+            <Typography variant="body1">01kg de feijão preto</Typography>
+            <Typography variant="body1">100g de carne seca</Typography>
+            <Typography variant="body1">70g de orelha de porco</Typography>
+            <Typography variant="body1">70g de rabo de porco</Typography>
+            <Typography variant="body1">70g de pé de porco</Typography>
+            <Typography variant="body1">100g de costelinha de porco</Typography>
+            <Typography variant="body1">50g de lombo de porco</Typography>
+            <Typography variant="body1">100g de paio</Typography>
+            <Typography variant="body1">150g de linguiça </Typography>
+            <Typography variant="body1">02 cebolas picadas </Typography>
+            <Typography variant="body1">01 maço de cebolinha verde picado</Typography>
+            <Typography variant="body1">03 folhas de louro</Typography>
+            <Typography variant="body1">06 dentes de alho</Typography>
+            <Typography variant="body1">Sal e pimenta do reino a gosto</Typography>
         </Box>
     
-        <Box className={"preparo-top sudeste"} >
+        <Box className={"preparo-top sudeste"}>
             <Typography variant="h3">
                 Modo de Preparo
             </Typography>
@@ -88,7 +88,7 @@ export default function ReceitaRJ() {
         
         <Box className={"preparo-bottom sudeste"}/>
 
-        <Box className={"harmonizacao sudeste"} >
+        <Box className={"harmonizacao sudeste"}>
             <Typography variant="h3">
                 Harmonização
             </Typography>
@@ -109,7 +109,7 @@ export default function ReceitaRJ() {
                     BEAUJOLAIS VILLAGE LOUIS LATOUR
                 </Link>
             </Box>
-            <Chip label="Você só encontra aqui!" component="p" />
+            <Chip label="Você só encontra aqui!" component="p"/>
         </Box>
 
     </Container>

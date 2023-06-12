@@ -23,11 +23,11 @@ export default function ReceitaAM() {
         <>
             <Container maxWidth="md" className={"receita"}>
                 <Box className={"receita-header"}>
-                    <img className={"receita-prato"} src={Prato} alt={"Caldo de Tambaqui - Amazonas"} />
+                    <img className={"receita-prato"} src={Prato} alt={"Caldo de Tambaqui - Amazonas"}/>
                     <img className={"receita-bookmark"} src={Bookmark} alt={"Amazonas - Norte"}/>
                     <Voltar url="/norte"/>
                 </Box>
-                <Box className={"receita-titulo norte"} >
+                <Box className={"receita-titulo norte"}>
                     <Typography variant="h1">
                         Amazonas
                     </Typography>
@@ -36,26 +36,26 @@ export default function ReceitaAM() {
                     </Typography>
                 </Box>
 
-                <Box className={"ingredientes norte"} >
+                <Box className={"ingredientes norte"}>
                     <img src={Icone} alt={""}/>
                     <Typography variant="h3">
                         Ingredientes
                     </Typography>
-                    <Typography>1kg de tambaqui</Typography>
-                    <Typography>03 tomates sem sementes cortados em 4 partes</Typography>
-                    <Typography>03 cebolas cortadas igual ao tomate</Typography>
-                    <Typography>15 pimentas-de-cheiro sem sementes</Typography>
-                    <Typography>e cortadas no meio (se preferir)</Typography>
-                    <Typography>01 maço de cheiro verde picado</Typography>
-                    <Typography>01 maço de cebolinhas picado</Typography>
-                    <Typography>Colorau a gosto</Typography>
-                    <Typography>Azeite de oliva a gosto</Typography>
-                    <Typography>01 colher de sobremesa de vinagre</Typography>
-                    <Typography>Sal a gosto</Typography>
-                    <Typography>Limão para o preparo do peixe</Typography>
+                    <Typography variant="body1">1kg de tambaqui</Typography>
+                    <Typography variant="body1">03 tomates sem sementes cortados em 4 partes</Typography>
+                    <Typography variant="body1">03 cebolas cortadas igual ao tomate</Typography>
+                    <Typography variant="body1">15 pimentas-de-cheiro sem sementes</Typography>
+                    <Typography variant="body1">e cortadas no meio (se preferir)</Typography>
+                    <Typography variant="body1">01 maço de cheiro verde picado</Typography>
+                    <Typography variant="body1">01 maço de cebolinhas picado</Typography>
+                    <Typography variant="body1">Colorau a gosto</Typography>
+                    <Typography variant="body1">Azeite de oliva a gosto</Typography>
+                    <Typography variant="body1">01 colher de sobremesa de vinagre</Typography>
+                    <Typography variant="body1">Sal a gosto</Typography>
+                    <Typography variant="body1">Limão para o preparo do peixe</Typography>
                 </Box>
 
-                <Box className={"preparo-top norte"} >
+                <Box className={"preparo-top norte"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -109,7 +109,7 @@ export default function ReceitaAM() {
                             MONTES APLHA SPECIAL CUVÉE PINOT NOIR
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

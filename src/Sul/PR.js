@@ -23,11 +23,11 @@ export default function ReceitaPR() {
         <>
             <Container maxWidth="md" className={"receita"}>
                 <Box className={"receita-header"}>
-                    <img className={"receita-prato"}  src={Prato} alt={"Paçoca de Pinhão - Paraná"} />
-                    <img className={"receita-bookmark"} alt={"Paraná - Sul"} />
+                    <img className={"receita-prato"}  src={Prato} alt={"Paçoca de Pinhão - Paraná"}/>
+                    <img className={"receita-bookmark"} alt={"Paraná - Sul"}/>
                     <Voltar url="/sul"/>
                 </Box>
-                <Box className={"receita-titulo sul"} >
+                <Box className={"receita-titulo sul"}>
                     <Typography variant="h1">
                         Paraná
                     </Typography>
@@ -36,7 +36,7 @@ export default function ReceitaPR() {
                     </Typography>
                 </Box>
 
-                <Box className={"ingredientes sul"} >
+                <Box className={"ingredientes sul"}>
                     <img src={Icone} alt={""}/>
                     <Typography variant="h3">
                         Ingredientes
@@ -64,7 +64,7 @@ export default function ReceitaPR() {
                     </Typography>
                 </Box>
 
-                <Box className={"preparo-top sul"} >
+                <Box className={"preparo-top sul"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -118,7 +118,7 @@ export default function ReceitaPR() {
 
                 <Box className={"preparo-bottom sul"}/>
 
-                <Box className={"harmonizacao sul"} >
+                <Box className={"harmonizacao sul"}>
                     <Typography variant="h3">
                         Harmonização
                     </Typography>
@@ -131,7 +131,7 @@ export default function ReceitaPR() {
                             CHATEAU STE MICHILLE CABERNET SAUVIGNON
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

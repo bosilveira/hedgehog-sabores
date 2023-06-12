@@ -24,11 +24,11 @@ export default function ReceitaAL() {
         <>
             <Container maxWidth="md" className={"receita"}>
                 <Box className={"receita-header"}>
-                    <img className={"receita-prato"} src={Prato} alt={"Sururu de Capote - Alagoas"} />
+                    <img className={"receita-prato"} src={Prato} alt={"Sururu de Capote - Alagoas"}/>
                     <img className={"receita-bookmark"} src={Bookmark} alt={"Alagoas - Nordeste"}/>
                     <Voltar url="/nordeste"/>
                 </Box>
-                <Box className={"receita-titulo nordeste"} >
+                <Box className={"receita-titulo nordeste"}>
                     <Typography variant="h1">
                         Alagoas
                     </Typography>
@@ -42,19 +42,19 @@ export default function ReceitaAL() {
                     <Typography variant="h3">
                         Ingredientes
                     </Typography>
-                    <Typography>03kg de Sururu</Typography>
-                    <Typography>03 tomates maduros picados</Typography>
-                    <Typography>02 cebolas picadas</Typography>
-                    <Typography>½ pimentão picado</Typography>
-                    <Typography>01 colher de chá de colorau</Typography>
-                    <Typography>02 pimentas-de-cheiro picadas</Typography>
-                    <Typography>01 colher (sobremesa) de extrato de tomate</Typography>
-                    <Typography>02 caixas de leite de coco</Typography>
-                    <Typography>02 colheres (sopa) de coentro picado</Typography>
-                    <Typography>Sal e pimenta-do-reino a gosto</Typography>
+                    <Typography variant="body1">03kg de Sururu</Typography>
+                    <Typography variant="body1">03 tomates maduros picados</Typography>
+                    <Typography variant="body1">02 cebolas picadas</Typography>
+                    <Typography variant="body1">½ pimentão picado</Typography>
+                    <Typography variant="body1">01 colher de chá de colorau</Typography>
+                    <Typography variant="body1">02 pimentas-de-cheiro picadas</Typography>
+                    <Typography variant="body1">01 colher (sobremesa) de extrato de tomate</Typography>
+                    <Typography variant="body1">02 caixas de leite de coco</Typography>
+                    <Typography variant="body1">02 colheres (sopa) de coentro picado</Typography>
+                    <Typography variant="body1">Sal e pimenta-do-reino a gosto</Typography>
                 </Box>
 
-                <Box className={"preparo-top nordeste"} >
+                <Box className={"preparo-top nordeste"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -71,7 +71,7 @@ export default function ReceitaAL() {
 
                 <Box className={"preparo-bottom nordeste"}/>
 
-                <Box className={"harmonizacao nordeste"} >
+                <Box className={"harmonizacao nordeste"}>
                     <Typography variant="h3">
                         Harmonização
                     </Typography>
@@ -92,7 +92,7 @@ export default function ReceitaAL() {
                             VALLADO (QUINTA DO ORGAL)
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

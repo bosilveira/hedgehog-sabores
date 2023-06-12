@@ -23,11 +23,11 @@ export default function ReceitaRR() {
         <>
             <Container maxWidth="md" className={"receita"}>
                 <Box className={"receita-header"}>
-                    <img className={"receita-prato"} src={Prato} alt={"Caldeirada - Roraima"} />
+                    <img className={"receita-prato"} src={Prato} alt={"Caldeirada - Roraima"}/>
                     <img className={"receita-bookmark"} src={Bookmark} alt={"Roraima - Norte"}/>
                     <Voltar url="/norte"/>
                 </Box>
-                <Box className={"receita-titulo norte"} >
+                <Box className={"receita-titulo norte"}>
                     <Typography variant="h1">
                         Roraima
                     </Typography>
@@ -36,23 +36,23 @@ export default function ReceitaRR() {
                     </Typography>
                 </Box>
 
-                <Box className={"ingredientes norte"} >
+                <Box className={"ingredientes norte"}>
                     <img src={Icone} alt={""}/>
                     <Typography variant="h3">
                         Ingredientes
                     </Typography>
-                    <Typography>02 peixes - Tambaqui ou tucunaré</Typography>
-                    <Typography>01 litro de leite de coco</Typography>
-                    <Typography>01 sachê de molho de tomate</Typography>
-                    <Typography>02 cebolas médias</Typography>
-                    <Typography>02 tomates médios</Typography>
-                    <Typography>Sal a gosto</Typography>
-                    <Typography>Pimenta-do-reino</Typography>
-                    <Typography>01 pimentão verde</Typography>
-                    <Typography>Ovos (quantos desejar)</Typography>
+                    <Typography variant="body1">02 peixes - Tambaqui ou tucunaré</Typography>
+                    <Typography variant="body1">01 litro de leite de coco</Typography>
+                    <Typography variant="body1">01 sachê de molho de tomate</Typography>
+                    <Typography variant="body1">02 cebolas médias</Typography>
+                    <Typography variant="body1">02 tomates médios</Typography>
+                    <Typography variant="body1">Sal a gosto</Typography>
+                    <Typography variant="body1">Pimenta-do-reino</Typography>
+                    <Typography variant="body1">01 pimentão verde</Typography>
+                    <Typography variant="body1">Ovos (quantos desejar)</Typography>
                 </Box>
 
-                <Box className={"preparo-top norte"} >
+                <Box className={"preparo-top norte"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -102,7 +102,7 @@ export default function ReceitaRR() {
                             BOURGOGNE ALIGOTÉ JOSEPH DROUHIN
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

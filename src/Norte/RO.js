@@ -23,11 +23,11 @@ export default function ReceitaRO() {
         <>
             <Container maxWidth="md" className={"receita"}>
                 <Box className={"receita-header"}>
-                    <img className={"receita-prato"} src={Prato} alt={"Doce de Buriti - Rondônia"} />
+                    <img className={"receita-prato"} src={Prato} alt={"Doce de Buriti - Rondônia"}/>
                     <img className={"receita-bookmark"} src={Bookmark} alt={"Rondônia - Norte"}/>
                     <Voltar url="/norte"/>
                 </Box>
-                <Box className={"receita-titulo norte"} >
+                <Box className={"receita-titulo norte"}>
                     <Typography variant="h1">
                         Rondônia
                     </Typography>
@@ -36,16 +36,16 @@ export default function ReceitaRO() {
                     </Typography>
                 </Box>
 
-                <Box className={"ingredientes norte"} >
+                <Box className={"ingredientes norte"}>
                     <img src={Icone} alt={""}/>
                     <Typography variant="h3">
                         Ingredientes
                     </Typography>
-                    <Typography>01 prato de buriti fresco</Typography>
-                    <Typography>01 prato de açúcar</Typography>
+                    <Typography variant="body1">01 prato de buriti fresco</Typography>
+                    <Typography variant="body1">01 prato de açúcar</Typography>
                 </Box>
 
-                <Box className={"preparo-top norte"} >
+                <Box className={"preparo-top norte"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -82,7 +82,7 @@ export default function ReceitaRO() {
                             GRAHAM'S FINE PORT TAWNY
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

@@ -23,11 +23,11 @@ export default function ReceitaMG() {
     <>
     <Container maxWidth="md" className={"receita"}>
         <Box className={"receita-header"}>
-            <img className={"receita-prato"} src={Prato} alt={"Frango com Quiabo - Minas Gerais"} />
+            <img className={"receita-prato"} src={Prato} alt={"Frango com Quiabo - Minas Gerais"}/>
             <img className={"receita-bookmark"} src={Bookmark} alt={"Minas Gerais - Sudeste"}/>
             <Voltar url="/sudeste"/>
         </Box>
-        <Box className={"receita-titulo sudeste"} >
+        <Box className={"receita-titulo sudeste"}>
             <Typography variant="h1">
                 Minas Gerais
             </Typography>
@@ -36,32 +36,32 @@ export default function ReceitaMG() {
             </Typography>
         </Box>
 
-        <Box className={"ingredientes sudeste"} >
+        <Box className={"ingredientes sudeste"}>
             <img src={Icone} alt={""}/>
             <Typography variant="h3">
                 Ingredientes
             </Typography>
-            <Typography>
+            <Typography variant="body1">
                 01kg de frango, limpo e cortado a passarinho
             </Typography>
-            <Typography>
+            <Typography variant="body1">
                 400g de quiabo picado
             </Typography>
-            <Typography>
+            <Typography variant="body1">
                 02 colheres de sopa de óleo
             </Typography>
-            <Typography>
+            <Typography variant="body1">
                 01 cebola ralada
             </Typography>
-            <Typography>
+            <Typography variant="body1">
                 02 dentes de alho amassados
             </Typography>
-            <Typography>
+            <Typography variant="body1">
                 Sal, pimenta do reino e cheiro verde a gosto
             </Typography>
         </Box>
 
-        <Box className={"preparo-top sudeste"} >
+        <Box className={"preparo-top sudeste"}>
             <Typography variant="h3">
                 Modo de Preparo
             </Typography>
@@ -109,7 +109,7 @@ export default function ReceitaMG() {
 
         <Box className={"preparo-bottom sudeste"}/>
 
-        <Box className={"harmonizacao sudeste"} >
+        <Box className={"harmonizacao sudeste"}>
             <Typography variant="h3">
                 Harmonização
             </Typography>
@@ -122,7 +122,7 @@ export default function ReceitaMG() {
                     LUCA SYRAH
                 </Link>
             </Box>
-            <Chip label="Você só encontra aqui!" component="p" />
+            <Chip label="Você só encontra aqui!" component="p"/>
         </Box>
 
     </Container>

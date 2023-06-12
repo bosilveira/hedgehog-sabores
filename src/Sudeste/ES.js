@@ -27,7 +27,7 @@ export default function ReceitaES() {
                     <img className={"receita-bookmark"} src={Bookmark} alt={"Espírito Santo - Sudeste"}/>
                     <Voltar url="/sudeste"/>
                 </Box>
-                <Box className={"receita-titulo sudeste"} >
+                <Box className={"receita-titulo sudeste"}>
                     <Typography variant="h1">
                         Espírito Santo
                     </Typography>
@@ -36,47 +36,47 @@ export default function ReceitaES() {
                     </Typography>
                 </Box>
 
-                <Box className={"ingredientes sudeste"} >
+                <Box className={"ingredientes sudeste"}>
                     <img src={Icone} alt={""}/>
                     <Typography variant="h3">
                         Ingredientes
                     </Typography>
-                    <Typography>
+                    <Typography variant="body1">
                         01kg de peixe de sua preferência em postas
                     </Typography>
-                    <Typography>
+                    <Typography variant="body1">
                         (badejo, cação, dentão, robalo,
                     </Typography>
-                    <Typography>
+                    <Typography variant="body1">
                         papaterra, dourado ou namorado)
                     </Typography>
-                    <Typography>
+                    <Typography variant="body1">
                         01 maço de coentro picado
                     </Typography>
-                    <Typography>
+                    <Typography variant="body1">
                         01 maço de cebolinha verde picado
                     </Typography>
-                    <Typography>
+                    <Typography variant="body1">
                         01 cebola picada
                     </Typography>
-                    <Typography>
+                    <Typography variant="body1">
                         03 dentes de alho
                     </Typography>
-                    <Typography>
+                    <Typography variant="body1">
                         04 tomates
                     </Typography>
-                    <Typography>
+                    <Typography variant="body1">
                         01 limão
                     </Typography>
-                    <Typography>
+                    <Typography variant="body1">
                         Urucum e sal a gosto
                     </Typography>
-                    <Typography>
+                    <Typography variant="body1">
                         ½ xícara de azeite de oliva
                     </Typography>
                 </Box>
 
-                <Box className={"preparo-top sudeste"} >
+                <Box className={"preparo-top sudeste"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -141,7 +141,7 @@ export default function ReceitaES() {
                             CHABLIS DOMAINE HAMELIN
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

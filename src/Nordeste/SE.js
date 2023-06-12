@@ -24,11 +24,11 @@ export default function ReceitaSE() {
         <>
             <Container maxWidth="md" className={"receita"}>
                 <Box className={"receita-header"}>
-                    <img className={"receita-prato"} src={Prato} alt={"Moqueca de Camarão - Sergipe"} />
+                    <img className={"receita-prato"} src={Prato} alt={"Moqueca de Camarão - Sergipe"}/>
                     <img className={"receita-bookmark"} src={Bookmark} alt={"Sergipe - Nordeste"}/>
                     <Voltar url="/nordeste"/>
                 </Box>
-                <Box className={"receita-titulo nordeste"} >
+                <Box className={"receita-titulo nordeste"}>
                     <Typography variant="h1">
                         Sergipe
                     </Typography>
@@ -42,19 +42,19 @@ export default function ReceitaSE() {
                     <Typography variant="h3">
                         Ingredientes
                     </Typography>
-                    <Typography>½ kg de camarão médio</Typography>
-                    <Typography>½ xícara de café de azeite de dendê</Typography>
-                    <Typography>01 vidro de leite de coco</Typography>
-                    <Typography>02 cebolas médias cortadas em rodelas</Typography>
-                    <Typography>01 limão</Typography>
-                    <Typography>½  xícara de chá de coentro</Typography>
-                    <Typography>½ xícara de chá de salsinha picada</Typography>
-                    <Typography>Cebolinha verde cortada a gosto</Typography>
-                    <Typography>03 tomates cortados em rodelas</Typography>
-                    <Typography>Sal a gosto</Typography>
+                    <Typography variant="body1">½ kg de camarão médio</Typography>
+                    <Typography variant="body1">½ xícara de café de azeite de dendê</Typography>
+                    <Typography variant="body1">01 vidro de leite de coco</Typography>
+                    <Typography variant="body1">02 cebolas médias cortadas em rodelas</Typography>
+                    <Typography variant="body1">01 limão</Typography>
+                    <Typography variant="body1">½  xícara de chá de coentro</Typography>
+                    <Typography variant="body1">½ xícara de chá de salsinha picada</Typography>
+                    <Typography variant="body1">Cebolinha verde cortada a gosto</Typography>
+                    <Typography variant="body1">03 tomates cortados em rodelas</Typography>
+                    <Typography variant="body1">Sal a gosto</Typography>
                 </Box>
 
-                <Box className={"preparo-top nordeste"} >
+                <Box className={"preparo-top nordeste"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -87,7 +87,7 @@ export default function ReceitaSE() {
 
                 <Box className={"preparo-bottom nordeste"}/>
 
-                <Box className={"harmonizacao nordeste"} >
+                <Box className={"harmonizacao nordeste"}>
                     <Typography variant="h3">
                         Harmonização
                     </Typography>
@@ -100,7 +100,7 @@ export default function ReceitaSE() {
                             MONTES ALPHA SPECIAL CUVÉE CHARDONNAY
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

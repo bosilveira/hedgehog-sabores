@@ -1,10 +1,4 @@
-import {
-    BrowserRouter,
-    Link,
-    useLocation,
-    Route,
-    Routes
-  } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Voltar({url}) {
     return (

@@ -23,11 +23,11 @@ export default function ReceitaRS() {
         <>
             <Container maxWidth="md" className={"receita"}>
                 <Box className={"receita-header"}>
-                    <img className={"receita-prato"} src={Prato} alt={"Churrasco - Rio Grande do Sul"} />
-                    <img className={"receita-bookmark"} src={Bookmark} alt={"Rio Grande do Sul - Sul"} />
+                    <img className={"receita-prato"} src={Prato} alt={"Churrasco - Rio Grande do Sul"}/>
+                    <img className={"receita-bookmark"} src={Bookmark} alt={"Rio Grande do Sul - Sul"}/>
                     <Voltar url="/sul"/>
                 </Box>
-                <Box className={"receita-titulo sul"} >
+                <Box className={"receita-titulo sul"}>
                     <Typography variant="h1">
                         Rio Grande do Sul
                     </Typography>
@@ -36,7 +36,7 @@ export default function ReceitaRS() {
                     </Typography>
                 </Box>
 
-                <Box className={"ingredientes sul"} >
+                <Box className={"ingredientes sul"}>
                     <img src={Icone} alt={""}/>
                     <Typography variant="h3">
                         Ingredientes
@@ -49,7 +49,7 @@ export default function ReceitaRS() {
                         Sal grosso à vontade</Typography>
                 </Box>
 
-                <Box className={"preparo-top sul"} >
+                <Box className={"preparo-top sul"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -67,9 +67,9 @@ export default function ReceitaRS() {
                     </Typography>
                 </Box>
 
-                <Box className={"preparo-bottom sul"} />
+                <Box className={"preparo-bottom sul"}/>
 
-                <Box className={"harmonizacao sul"} >
+                <Box className={"harmonizacao sul"}>
                     <Typography variant="h3">
                         Harmonização
                     </Typography>
@@ -90,7 +90,7 @@ export default function ReceitaRS() {
                             EL ENEMIGO SYRAH-VIOGNIER
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

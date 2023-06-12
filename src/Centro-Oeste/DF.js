@@ -23,11 +23,11 @@ export default function ReceitaDF() {
         <>
             <Container maxWidth="md" className={"receita"}>
                 <Box className={"receita-header"}>
-                    <img className={"receita-prato"} src={Prato} alt={"Filé de Tilápia - Distrito Federal"} />
+                    <img className={"receita-prato"} src={Prato} alt={"Filé de Tilápia - Distrito Federal"}/>
                     <img className={"receita-bookmark"} src={Bookmark} alt={"Distrito Federal - Centro-Oeste"}/>
                     <Voltar url="/centro-oeste"/>
                 </Box>
-                <Box className={"receita-titulo centro-oeste"} >
+                <Box className={"receita-titulo centro-oeste"}>
                     <Typography variant="h1">
                         Distrito Federal
                     </Typography>
@@ -36,24 +36,24 @@ export default function ReceitaDF() {
                     </Typography>
                 </Box>
 
-                <Box className={"ingredientes centro-oeste"} >
+                <Box className={"ingredientes centro-oeste"}>
                     <img src={Icone} alt={""}/>
                     <Typography variant="h3">
                         Ingredientes
                     </Typography>
 
-                    <Typography>1kg de filé de tilápia</Typography>
-                    <Typography>200g de farinha de rosca</Typography>
-                    <Typography>200g de farinha de trigo</Typography>
-                    <Typography>Sal a gosto</Typography>
-                    <Typography>Pimenta-do-reino a gosto</Typography>
-                    <Typography>200ml de leite</Typography>
-                    <Typography>03 ovos</Typography>
-                    <Typography>Óleo de girassol</Typography>
+                    <Typography variant="body1">1kg de filé de tilápia</Typography>
+                    <Typography variant="body1">200g de farinha de rosca</Typography>
+                    <Typography variant="body1">200g de farinha de trigo</Typography>
+                    <Typography variant="body1">Sal a gosto</Typography>
+                    <Typography variant="body1">Pimenta-do-reino a gosto</Typography>
+                    <Typography variant="body1">200ml de leite</Typography>
+                    <Typography variant="body1">03 ovos</Typography>
+                    <Typography variant="body1">Óleo de girassol</Typography>
 
                 </Box>
 
-                <Box className={"preparo-top centro-oeste"} >
+                <Box className={"preparo-top centro-oeste"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -93,7 +93,7 @@ export default function ReceitaDF() {
 
                 <Box className={"preparo-bottom centro-oeste"}/>
 
-                <Box className={"harmonizacao centro-oeste"} >
+                <Box className={"harmonizacao centro-oeste"}>
                     <Typography variant="h3">
                         Harmonização
                     </Typography>
@@ -114,7 +114,7 @@ export default function ReceitaDF() {
                             MUROS ANTIGOS (LOUREIRO)
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

@@ -23,11 +23,11 @@ export default function ReceitaTO() {
         <>
             <Container maxWidth="md" className={"receita"}>
                 <Box className={"receita-header"}>
-                    <img className={"receita-prato"} src={Prato} alt={"Paçoca de Carne de Sol - Tocantins"} />
+                    <img className={"receita-prato"} src={Prato} alt={"Paçoca de Carne de Sol - Tocantins"}/>
                     <img className={"receita-bookmark"} src={Bookmark} alt={"Tocantins - Norte"}/>
                     <Voltar url="/norte"/>
                 </Box>
-                <Box className={"receita-titulo norte"} >
+                <Box className={"receita-titulo norte"}>
                     <Typography variant="h1">
                         Tocantins
                     </Typography>
@@ -36,21 +36,21 @@ export default function ReceitaTO() {
                     </Typography>
                 </Box>
 
-                <Box className={"ingredientes norte"} >
+                <Box className={"ingredientes norte"}>
                     <img src={Icone} alt={""}/>
                     <Typography variant="h3">
                         Ingredientes
                     </Typography>
-                    <Typography>01 kg de carne de sol</Typography>
-                    <Typography>01 cebola pequena</Typography>
-                    <Typography>02 dentes de alho amassados</Typography>
-                    <Typography>Óleo para refogar</Typography>
-                    <Typography>Colorau </Typography>
-                    <Typography>½ kg de farinha de mandioca (fina)</Typography>
-                    <Typography>Cheiro verde a gosto</Typography>
+                    <Typography variant="body1">01 kg de carne de sol</Typography>
+                    <Typography variant="body1">01 cebola pequena</Typography>
+                    <Typography variant="body1">02 dentes de alho amassados</Typography>
+                    <Typography variant="body1">Óleo para refogar</Typography>
+                    <Typography variant="body1">Colorau </Typography>
+                    <Typography variant="body1">½ kg de farinha de mandioca (fina)</Typography>
+                    <Typography variant="body1">Cheiro verde a gosto</Typography>
                 </Box>
 
-                <Box className={"preparo-top norte"} >
+                <Box className={"preparo-top norte"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -100,7 +100,7 @@ export default function ReceitaTO() {
                             LA POSTA BONARDA
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

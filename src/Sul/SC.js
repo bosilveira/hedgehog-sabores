@@ -23,11 +23,11 @@ export default function ReceitaSC() {
         <>
             <Container maxWidth="md" className={"receita"}>
                 <Box className={"receita-header"}>
-                    <img className={"receita-prato"} src={Prato} alt={"Joelho de Porco - Santa Catarina"} />
-                    <img className={"receita-bookmark"} src={Bookmark} alt={"Santa Catarina - Sul"} />
+                    <img className={"receita-prato"} src={Prato} alt={"Joelho de Porco - Santa Catarina"}/>
+                    <img className={"receita-bookmark"} src={Bookmark} alt={"Santa Catarina - Sul"}/>
                     <Voltar url="/sul"/>
                 </Box>
-                <Box className={"receita-titulo sul"} >
+                <Box className={"receita-titulo sul"}>
                     <Typography variant="h1">
                         Santa Catarina
                     </Typography>
@@ -36,7 +36,7 @@ export default function ReceitaSC() {
                     </Typography>
                 </Box>
 
-                <Box className={"ingredientes sul"} >
+                <Box className={"ingredientes sul"}>
                     <img src={Icone} alt={""}/>
                     <Typography variant="h3">
                         Ingredientes
@@ -67,7 +67,7 @@ export default function ReceitaSC() {
                     </Typography>
                 </Box>
 
-                <Box className={"preparo-top sul"} >
+                <Box className={"preparo-top sul"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -117,7 +117,7 @@ export default function ReceitaSC() {
 
                 <Box className={"preparo-bottom sul"}/>
 
-                <Box className={"harmonizacao sul"} >
+                <Box className={"harmonizacao sul"}>
                     <Typography variant="h3">
                         Harmonização
                     </Typography>
@@ -138,7 +138,7 @@ export default function ReceitaSC() {
                             POGGIO BADIOLA (MAZZEI)
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

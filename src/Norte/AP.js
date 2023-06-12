@@ -23,11 +23,11 @@ export default function ReceitaAP() {
         <>
             <Container maxWidth="md" className={"receita"}>
                 <Box className={"receita-header"}>
-                    <img className={"receita-prato"} src={Prato} alt={"Pescada de Gurijuba - Amapá"} />
+                    <img className={"receita-prato"} src={Prato} alt={"Pescada de Gurijuba - Amapá"}/>
                     <img className={"receita-bookmark"} src={Bookmark} alt={"Amapá - Norte"}/>
                     <Voltar url="/norte"/>
                 </Box>
-                <Box className={"receita-titulo norte"} >
+                <Box className={"receita-titulo norte"}>
                     <Typography variant="h1">
                         Amapá
                     </Typography>
@@ -36,25 +36,25 @@ export default function ReceitaAP() {
                     </Typography>
                 </Box>
 
-                <Box className={"ingredientes norte"} >
+                <Box className={"ingredientes norte"}>
                     <img src={Icone} alt={""}/>
                     <Typography variant="h3">
                         Ingredientes
                     </Typography>
-                    <Typography>1,5 de gurijuba fresca</Typography>
-                    <Typography>800g de camarão sem cabeça (fresco ou salgado)</Typography>
-                    <Typography>500ml de leite de coco</Typography>
-                    <Typography>01 vidro pequeno de azeite de dendê</Typography>
-                    <Typography>Suco de 2 limões</Typography>
-                    <Typography>Cheiro-verde</Typography>
-                    <Typography>Tomate</Typography>
-                    <Typography>Pimentão verde</Typography>
-                    <Typography>Alho picado</Typography>
-                    <Typography>Cebola a gosto</Typography>
-                    <Typography>Sal a gosto</Typography>
+                    <Typography variant="body1">1,5 de gurijuba fresca</Typography>
+                    <Typography variant="body1">800g de camarão sem cabeça (fresco ou salgado)</Typography>
+                    <Typography variant="body1">500ml de leite de coco</Typography>
+                    <Typography variant="body1">01 vidro pequeno de azeite de dendê</Typography>
+                    <Typography variant="body1">Suco de 2 limões</Typography>
+                    <Typography variant="body1">Cheiro-verde</Typography>
+                    <Typography variant="body1">Tomate</Typography>
+                    <Typography variant="body1">Pimentão verde</Typography>
+                    <Typography variant="body1">Alho picado</Typography>
+                    <Typography variant="body1">Cebola a gosto</Typography>
+                    <Typography variant="body1">Sal a gosto</Typography>
                 </Box>
 
-                <Box className={"preparo-top norte"} >
+                <Box className={"preparo-top norte"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -104,7 +104,7 @@ export default function ReceitaAP() {
                             MONTES APLHA SPECIAL CUVÉE PINOT NOIR
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

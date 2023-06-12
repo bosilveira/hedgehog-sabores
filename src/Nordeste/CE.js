@@ -42,17 +42,17 @@ export default function ReceitaCE() {
                     <Typography variant="h3">
                         Ingredientes
                     </Typography>
-                    <Typography>½ de fígado de frango</Typography>
-                    <Typography>250g de coração de frango</Typography>
-                    <Typography>02 cubos de caldo de galinha</Typography>
-                    <Typography>Sal, pimenta-de-cheiro picadinha</Typography>
-                    <Typography>01 cebola picada</Typography>
-                    <Typography>01 colher rasa de colorau</Typography>
-                    <Typography>Farinha de mandioca</Typography>
-                    <Typography>Pimentão picado</Typography>
+                    <Typography variant="body1">½ de fígado de frango</Typography>
+                    <Typography variant="body1">250g de coração de frango</Typography>
+                    <Typography variant="body1">02 cubos de caldo de galinha</Typography>
+                    <Typography variant="body1">Sal, pimenta-de-cheiro picadinha</Typography>
+                    <Typography variant="body1">01 cebola picada</Typography>
+                    <Typography variant="body1">01 colher rasa de colorau</Typography>
+                    <Typography variant="body1">Farinha de mandioca</Typography>
+                    <Typography variant="body1">Pimentão picado</Typography>
                 </Box>
 
-                <Box className={"preparo-top nordeste"} >
+                <Box className={"preparo-top nordeste"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -100,7 +100,7 @@ export default function ReceitaCE() {
 
                 <Box className={"preparo-bottom nordeste"}/>
 
-                <Box className={"harmonizacao nordeste"} >
+                <Box className={"harmonizacao nordeste"}>
                     <Typography variant="h3">
                         Harmonização
                     </Typography>
@@ -121,7 +121,7 @@ export default function ReceitaCE() {
                             COYAM
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>

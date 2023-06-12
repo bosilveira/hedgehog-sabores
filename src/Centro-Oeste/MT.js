@@ -23,11 +23,11 @@ export default function ReceitaMT() {
         <>
             <Container maxWidth="md" className={"receita"}>
                 <Box className={"receita-header"}>
-                    <img className={"receita-prato"} src={Prato} alt={"Maria Isabel - Mato Grosso"} />
+                    <img className={"receita-prato"} src={Prato} alt={"Maria Isabel - Mato Grosso"}/>
                     <img className={"receita-bookmark"} src={Bookmark} alt={"Mato Grosso - Centro-Oeste"}/>
                     <Voltar url="/centro-oeste"/>
                 </Box>
-                <Box className={"receita-titulo centro-oeste"} >
+                <Box className={"receita-titulo centro-oeste"}>
                     <Typography variant="h1">
                         Mato Grosso
                     </Typography>
@@ -36,23 +36,23 @@ export default function ReceitaMT() {
                     </Typography>
                 </Box>
 
-                <Box className={"ingredientes centro-oeste"} >
+                <Box className={"ingredientes centro-oeste"}>
                     <img src={Icone} alt={""}/>
                     <Typography variant="h3">
                         Ingredientes
                     </Typography>
-                    <Typography>½ kg de carne</Typography>
-                    <Typography>½ Kg de arroz</Typography>
-                    <Typography>Água fervente</Typography>
-                    <Typography>Óleo ou gordura</Typography>
-                    <Typography>Sal</Typography>
-                    <Typography>Pimenta do reino</Typography>
-                    <Typography>Vinagre</Typography>
-                    <Typography>Alho</Typography>
-                    <Typography>Temperos a gosto</Typography>
+                    <Typography variant="body1">½ kg de carne</Typography>
+                    <Typography variant="body1">½ Kg de arroz</Typography>
+                    <Typography variant="body1">Água fervente</Typography>
+                    <Typography variant="body1">Óleo ou gordura</Typography>
+                    <Typography variant="body1">Sal</Typography>
+                    <Typography variant="body1">Pimenta do reino</Typography>
+                    <Typography variant="body1">Vinagre</Typography>
+                    <Typography variant="body1">Alho</Typography>
+                    <Typography variant="body1">Temperos a gosto</Typography>
                 </Box>
 
-                <Box className={"preparo-top centro-oeste"} >
+                <Box className={"preparo-top centro-oeste"}>
                     <Typography variant="h3">
                         Modo de Preparo
                     </Typography>
@@ -103,7 +103,7 @@ export default function ReceitaMT() {
                             ESPORÃO RESERVA BRANCO
                         </Link>
                     </Box>
-                    <Chip label="Você só encontra aqui!" component="p" />
+                    <Chip label="Você só encontra aqui!" component="p"/>
                 </Box>
 
             </Container>
