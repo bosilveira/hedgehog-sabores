@@ -20,7 +20,7 @@ header * {
     position: relative;
     width: 100%;
     height: 209px;
-    min-width: 320px;
+    min-width: 300px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,14 +28,15 @@ header * {
 }
 
 .logo {
-    min-width: 300px;
-    margin-left: 16px;
+    max-width: 300px;
+    margin-left: 8px;
+    width: 80%;
 }
 
 .bookmark {
     position: absolute;
-    width: 80px;
-    right: 40px;
+    width: 60px;
+    right: 8px;
     top: -8px;
     background: none;
 }
@@ -46,7 +47,7 @@ header * {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 0px;
+    padding-top: 0;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
@@ -75,6 +76,11 @@ main {
     top: 0;
     width: 100vw;
     background-color: transparent;
+}
+
+main * {
+    padding: 0;
+    margin: 0;
 }
 
 .fadeIn {
@@ -123,6 +129,9 @@ main {
     flex-Direction: column;
     align-items: center;
     justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+
 }
 
 .receita-header {
@@ -130,13 +139,14 @@ main {
     width: 100%;
     top: 0;
     height: 209px;
-    min-width: 320px;
+    min-width: 300px;
     border-bottom: 2px solid #BE952B;
+    padding: 0;
 }
 
 .receita-prato {
     position: absolute;
-    min-width: 320px;
+    min-width: 300px;
     width: 100%;
     height: 209px;
     object-fit: cover;
@@ -144,8 +154,8 @@ main {
 
 .receita-bookmark {
     position: absolute;
-    width: 80px;
-    right: 40px;
+    width: 70px;
+    right: 8px;
     top: -32px;
     background: none;
 }
@@ -155,7 +165,7 @@ main {
     background-size: cover;
     width: 100%;
     height: 120px;
-    min-width: 320px;
+    min-width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,7 +194,8 @@ main {
 
 .receita-titulo h1 {
     background-color: transparent;
-    min-width: 320px;
+    min-width: 300px;
+    width: 100%;
     text-align: center;
     font-family: "Abril Fatface", sans-serif;
     font-size: 32px;
@@ -212,7 +223,8 @@ main {
 
 .receita-titulo h2 {
     background-color: transparent;
-    min-width: 320px;
+    min-width: 300px;
+    width: 100%;
     text-align: center;
     font-family: "Cookie", cursive;
     color: #D8D2C6;
@@ -224,13 +236,13 @@ main {
     font-family: 'Inter Variable', sans-serif;
     width: 100%;
     min-height: 320px;
-    min-width: 320px;
+    min-width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 16px;
-    padding: 24px 0;
+    padding: 24px 0px;
 }
 
 .ingredientes.centro-oeste {
@@ -275,7 +287,7 @@ main {
     background-size: cover;
     width: 100%;
     height: 120px;
-    min-width: 320px;
+    min-width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -312,7 +324,7 @@ main {
 .preparo-body-center {
     background-color: #232323;
     width: 100%;
-    min-width: 320px;
+    min-width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -331,7 +343,7 @@ main {
 .preparo-body-left {
     background-color: #232323;
     width: 100%;
-    min-width: 320px;
+    min-width: 300px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -360,7 +372,7 @@ main {
 .preparo-body-right {
     background-color: #232323;
     width: 100%;
-    min-width: 320px;
+    min-width: 300px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -391,7 +403,7 @@ main {
     background-size: cover;
     width: 100%;
     height: 120px;
-    min-width: 320px;
+    min-width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -420,8 +432,8 @@ main {
 
 .harmonizacao {
     width: 100%;
-    min-height: 320px;
-    min-width: 320px;
+    min-height: 300px;
+    min-width: 300px;
     display: flex;
     gap: 24px;
     justify-content: center;

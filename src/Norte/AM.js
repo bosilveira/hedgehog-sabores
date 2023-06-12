@@ -124,7 +124,7 @@ export default function ReceitaAM() {
                 </Typography>
             </Box>
 
-            <Box className={"preparo-bottom sudeste"}/>
+            <Box className={"preparo-bottom norte"}/>
 
             <Box className={"harmonizacao norte"}>
                 <Typography variant="h3">
