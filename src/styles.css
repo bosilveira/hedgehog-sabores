@@ -274,6 +274,7 @@ main * {
 
 .ingredientes p {
     font-family: 'Inter Variable', sans-serif;
+    text-align: center;
 }
 
 .ingredientes img {

@@ -1,6 +1,7 @@
 import {useState, useEffect} from "react";
 import {
     BrowserRouter,
+    HashRouter,
     Link,
     useLocation,
     Route,
@@ -62,11 +63,11 @@ import Typography from '@mui/material/Typography';
 
 export default function App() {
     return (
-        <BrowserRouter>
-            <div className={`App`}>
+        <HashRouter>
+            <div className='App'>
                 <Sabores/>
             </div>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
