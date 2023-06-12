@@ -1,66 +1,496 @@
+body {
+  margin: 0;
+  background-color: #1E1E1E;
+}
+
+p, a, span {
+  background-color: transparent;
+}
+
+header {
+  border-bottom: 2px solid #BE952B;
+}
+
+header * {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.brasil-header {
+  position: relative;
+  width: 100%;
+  height: 209px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  min-width: 300px;
+}
+
+.bookmark {
+  position: absolute;
+  width: 80px;
+  right: 40px;
+  top: -6px;
+  background: none;
+}
+
+.mapa-brasil {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.mapa-brasil-texto {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.mapa-estado-texto {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  background-color: transparent;
+}
+
 .fadeIn {
     animation: 0.5s fadeIn forwards;
   }
   
-  .fadeOut {
-    animation: 0.5s fadeOut forwards;
-  }
-
-  .fadeIn2 {
-    animation: 0.5s fadeIn2 forwards;
-  }
-  
-  .fadeOut2 {
-    animation: 0.5s fadeOut2 forwards;
-  }
-  
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translate(-40px, 0);
-    }
-    to {
-      opacity: 1;
-      transform: translate(0px, 0px);
-    }
-  }
-  
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-      transform: translate(0px, 0px);
-    }
-    to {
-      transform: translate(-40px, 0);
-      opacity: 0;
-    }
-  }
-
-  @keyframes fadeIn2 {
-    from {
-      opacity: 0;
-      transform: translate(-40px, 0);
-    }
-    to {
-      opacity: 1;
-      transform: translate(0px, 0px);
-    }
-  }
-
-  @keyframes fadeOut2 {
-    from {
-      opacity: 0;
-      transform: translate(0px, 0px);
-    }
-    to {
-      transform: translate(-40px, 0);
-      opacity: 0;
-    }
-  }
-
-  p, a, span {
-    background-color: transparent;
-    font-size: 16px;
+.fadeOut {
+  animation: 0.5s fadeOut forwards;
 }
 
+.fadeIn2 {
+  animation: 0.5s fadeIn2 forwards;
+}
+
+.fadeOut2 {
+  animation: 0.5s fadeOut2 forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+  
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(-40px, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn2 {
+  from {
+    opacity: 0;
+    transform: translate(-40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes fadeOut2 {
+  from {
+    opacity: 0;
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(-40px, 0);
+    opacity: 0;
+  }
+}
+
+.receita {
+  position: relative;
+  width: 100%;
+  top: 0;
+  display: flex;
+  flex-Direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.receita-header {
+  position: relative;
+  width: 100%;
+  top: 0;
+  height: 209px;
+  min-width: 320px;
+  border-bottom: 2px solid #BE952B;
+}
+
+.receita-prato {
+  position: absolute;
+  min-width: 320px;
+  width: 100%;
+  height: 209px;
+  object-fit: cover;
+}
+
+.receita-bookmark {
+  position: absolute;
+  width: 80px;
+  right: 40px;
+  top: -30px;
+  background: none;
+}
+
+.receita-titulo {
+  background: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3e%3cellipse cx='50%25' cy='0%25' rx='50%25' ry='100%25' style='fill:%23232323'/%3e%3c/svg%3e") center top no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 120px;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.receita-titulo.centro-oeste {
+  background-color: #5F9139;
+}
+
+.receita-titulo.nordeste {
+  background-color: #97AB43;
+}
+
+.receita-titulo.norte {
+  background-color: #33753F;
+}
+
+.receita-titulo.sudeste {
+  background-color: #C5BE25;
+}
+
+.receita-titulo.sul {
+  background-color: #E3AB1B;
+}
+
+.receita-titulo h1 {
+  background-color: transparent;
+  min-width: 320px;
+  text-align: center;
+  font-family: "Abril Fatface", sans-serif;
+  font-size: 32px;
+}
+
+.receita-titulo.centro-oeste h1 {
+  color: #5F9139;
+}
+
+.receita-titulo.nordeste h1 {
+  color: #97AB43;
+}
+
+.receita-titulo.norte h1 {
+  color: #33753F;
+}
+
+.receita-titulo.sudeste h1 {
+  color: #C5BE25;
+}
+
+.receita-titulo.sul h1 {
+  color: #E3AB1B;
+}
+
+.receita-titulo h2 {
+  background-color: transparent;
+  min-width: 320px;
+  text-align: center;
+  font-family: "Cookie", cursive;
+  color: #D8D2C6;
+  font-size: 48px;
+  margin-top: -12px;
+}
+
+.ingredientes {
+  font-family: 'Inter Variable', sans-serif;
+  width: 100%;
+  min-height: 320px;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+.ingredientes.centro-oeste {
+  background-color: #5F9139;
+}
+
+.ingredientes.nordeste {
+  background-color: #97AB43;
+}
+
+.ingredientes.norte {
+  background-color: #33753F;
+}
+
+.ingredientes.sudeste {
+  background-color: #C5BE25;
+}
+
+.ingredientes.sul {
+  background-color: #E3AB1B;
+}
+
+.ingredientes h3 {
+  background-color: transparent;
+  font-family: "Abril Fatface", sans-serif;
+  color: #242424;
+  font-size: 24px;
+}
+
+.ingredientes p {
+  font-family: 'Inter Variable', sans-serif;
+}
+
+.ingredientes img {
+  background-color: transparent;
+  width: 64px;
+  margin: 24px 0;
+}
+
+.preparo-top {
+  background: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3e%3cellipse cx='50%25' cy='100%25' rx='50%25' ry='100%25' style='fill:%23232323'/%3e%3c/svg%3e") center top no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 120px;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.preparo-top h3 {
+  background-color: transparent;
+  font-family: "Abril Fatface", sans-serif;
+  color: #D8D2C6;
+  font-size: 24px;
+}
+
+.preparo-top.centro-oeste {
+  background-color: #5F9139;
+}
+
+.preparo-top.nordeste {
+  background-color: #97AB43;
+}
+
+.preparo-top.norte {
+  background-color: #33753F;
+}
+
+.preparo-top.sudeste {
+  background-color: #C5BE25;
+}
+
+.preparo-top.sul {
+  background-color: #E3AB1B;
+}
+
+.preparo-body-center {
+  background-color: #232323;
+  width: 100%;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px 0 0 0;
+}
+
+.preparo-body-center p {
+  font-family: 'Inter Variable', sans-serif;
+  margin: 4px 24px;
+  color: #D8D2C6;
+  text-align: center;
+}
+
+.preparo-body-left {
+  background-color: #232323;
+  width: 100%;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.preparo-body-left p {
+  margin: 4px 24px;
+  font-family: 'Inter Variable', sans-serif;
+  color: #D8D2C6;
+  max-width: 480px;
+  text-align: left;
+}
+
+.preparo-body-left p:nth-child(1) {
+  background-color: transparent;
+  font-family: "Abril Fatface", sans-serif;
+  color: #D8D2C6;
+  font-size: 92px;
+  width: 50%;
+  border-bottom: 1px solid #D8D2C6;
+  text-align: left;
+}
+
+.preparo-body-right {
+  background-color: #232323;
+  width: 100%;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.preparo-body-right p {
+  margin: 4px 24px;
+  font-family: 'Inter Variable', sans-serif;
+  color: #D8D2C6;
+  max-width: 480px;
+  text-align: right;
+}
+
+.preparo-body-right p:nth-child(1) {
+  background-color: transparent;
+  font-family: "Abril Fatface", sans-serif;
+  color: #D8D2C6;
+  font-size: 92px;
+  width: 50%;
+  border-bottom: 1px solid #D8D2C6;
+  text-align: right;
+}
+
+.preparo-bottom {
+  background: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3e%3cellipse cx='50%25' cy='0%25' rx='50%25' ry='100%25' style='fill:%23232323'/%3e%3c/svg%3e") center top no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 120px;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.preparo-bottom.centro-oeste {
+  background-color: #5F9139;
+}
+
+.preparo-bottom.nordeste {
+  background-color: #97AB43;
+}
+
+.preparo-bottom.norte {
+  background-color: #33753F;
+}
+
+.preparo-bottom.sul {
+  background-color: #E3AB1B;
+}
+
+.preparo-bottom.sudeste {
+  background-color: #C5BE25;
+}
+
+.harmonizacao {
+  width: 100%;
+  min-height: 320px;
+  min-width: 320px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 48px 0;
+}
+
+.harmonizacao.centro-oeste {
+  background-color: #5F9139;
+}
+
+.harmonizacao.nordeste {
+  background-color: #97AB43;
+}
+
+.harmonizacao.norte {
+  background-color: #33753F;
+}
+
+.harmonizacao.sudeste {
+  background-color: #C5BE25;
+}
+
+.harmonizacao.sul {
+  background-color: #E3AB1B;
+}
+
+.harmonizacao h3 {
+  background-color: transparent;
+  font-family: "Abril Fatface", sans-serif;
+  color: #242424;
+  font-size: 24px;
+}
+
+.harmonizacao img {
+  background-color: transparent;
+  width: 64px;
+}
+
+.vinho {
+  background-color: transparent;
+  text-align: center;
+}
+
+.vinho p, .vinho a {
+  font-family: 'Inter Variable', sans-serif;
+  font-size: 16px;
+}

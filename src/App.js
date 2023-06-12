@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react";
 import {
-  BrowserRouter,
-  Link,
-  useLocation,
-  Route,
-  Routes
+    BrowserRouter,
+    Link,
+    useLocation,
+    Route,
+    Routes
 } from "react-router-dom";
 import '@fontsource-variable/inter';
 import "@fontsource/abril-fatface";
 import "@fontsource/cookie";
+
 import "./styles.css";
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
@@ -16,46 +17,46 @@ import Container from '@mui/material/Container';
 import SEO from "./SEO";
 
 import Logo from './logo.svg'
-import Restaurant from './restaurant.svg'
+import Bookmark from './Brasil-bookmark.svg'
 
 import Brasil from "./Brasil";
-import RegiaoSul from './Sul'
-import RegiaoSudeste from './Sudeste'
-import RegiaoCentroOeste from './CentroOeste'
-import RegiaoNorte from './Norte'
-import RegiaoNordeste from './Nordeste'
 
-import ReceitaPR from "./PR";
-import ReceitaSC from "./SC";
-import ReceitaRS from "./RS";
+import RegiaoCentroOeste from './Centro-Oeste/CentroOeste'
+import ReceitaDF from "./Centro-Oeste/DF";
+import ReceitaGO from "./Centro-Oeste/GO";
+import ReceitaMS from "./Centro-Oeste/MS";
+import ReceitaMT from "./Centro-Oeste/MT";
 
-import ReceitaGO from "./GO";
-import ReceitaMT from "./MT";
-import ReceitaMS from "./MS";
-import ReceitaDF from "./DF";
+import RegiaoNordeste from './Nordeste/RegiaoNordeste'
+import ReceitaAL from "./Nordeste/AL";
+import ReceitaBA from "./Nordeste/BA";
+import ReceitaCE from "./Nordeste/CE";
+import ReceitaMA from "./Nordeste/MA";
+import ReceitaPB from "./Nordeste/PB";
+import ReceitaPE from "./Nordeste/PE";
+import ReceitaPI from "./Nordeste/PI";
+import ReceitaRN from "./Nordeste/RN";
+import ReceitaSE from "./Nordeste/SE";
 
-import ReceitaES from "./ES";
-import ReceitaMG from "./MG";
-import ReceitaRJ from "./RJ";
-import ReceitaSP from "./SP";
+import RegiaoNorte from './Norte/RegiaoNorte'
+import ReceitaAC from "./Norte/AC";
+import ReceitaAM from "./Norte/AM";
+import ReceitaAP from "./Norte/AP";
+import ReceitaPA from "./Norte/PA";
+import ReceitaRO from "./Norte/RO";
+import ReceitaRR from "./Norte/RR";
+import ReceitaTO from "./Norte/TO";
 
-import ReceitaAM from "./AM";
-import ReceitaPA from "./PA";
-import ReceitaAC from "./AC";
-import ReceitaAP from "./AP";
-import ReceitaRO from "./RO";
-import ReceitaRR from "./RR";
-import ReceitaTO from "./TO";
+import RegiaoSudeste from './Sudeste/RegiaoSudeste'
+import ReceitaES from "./Sudeste/ES";
+import ReceitaMG from "./Sudeste/MG";
+import ReceitaRJ from "./Sudeste/RJ";
+import ReceitaSP from "./Sudeste/SP";
 
-import ReceitaAL from "./AL";
-import ReceitaBA from "./BA";
-import ReceitaCE from "./CE";
-import ReceitaMA from "./MA";
-import ReceitaPI from "./PI";
-import ReceitaPE from "./PE";
-import ReceitaPB from "./PB";
-import ReceitaRN from "./RN";
-import ReceitaSE from "./SE";
+import RegiaoSul from './Sul/RegiaoSul'
+import ReceitaPR from "./Sul/PR";
+import ReceitaRS from "./Sul/RS"
+import ReceitaSC from "./Sul/SC";
 
 import Typography from '@mui/material/Typography';
 
@@ -63,39 +64,39 @@ export default function App() {
     return (
         <BrowserRouter>
             <div className={`App`}>
-                <Content />
+                <Sabores />
             </div>
         </BrowserRouter>
     );
 }
 
-function Content() {
+function Sabores() {
 
     const location = useLocation();
     const [displayLocation, setDisplayLocation] = useState(location);
-    const [transitionStage, setTransistionStage] = useState("fadeIn");
+    const [transitionStage, setTransitionStage] = useState("fadeIn");
 
     useEffect(() => {
-        if (location !== displayLocation) setTransistionStage("fadeOut");
+        if (location !== displayLocation) setTransitionStage("fadeOut");
     }, [location, displayLocation]);
 
     const animate = () => {
         if (transitionStage === "fadeOut") {
-            setTransistionStage("fadeIn");
+            setTransitionStage("fadeIn");
             setDisplayLocation(location);
         }
     }
 
     return (
     <>
-    <header style={{borderBottom: "2px solid #BE952B"}}>
+    <header>
         <Routes location={displayLocation}>
             <Route path="*" element={
-                <Container maxWidth="md" style={{paddingLeft: 0, paddingRight: 0}}>
-                    <Box style={{position: "relative", width: '100%', height: '209px', minWidth: "320px", display: "flex", flexDirection: "row", alignItems:"center", justifyContent: "space-between"}} >
+                <Container maxWidth="md">
+                    <Box className={"brasil-header"}>
                         <Link to="/">
-                            <img style={{ minWidth: "300px" }} src={Logo} alt={"O Que o Brasil tem de ... + Delicioso"} />
-                            <img src={Restaurant} style={{position: "absolute", width: '80px', right: "40px", top: "-6px", background: "none"}} alt={"Brasil"} />
+                            <img className={"logo"} src={Logo} alt={"O Que o Brasil tem de ... + Delicioso"} />
+                            <img className={"bookmark"} src={Bookmark} alt={"Brasil"} />
                         </Link>
                     </Box>
                 </Container>
@@ -103,7 +104,7 @@ function Content() {
         </Routes>
     </header>
 
-    <Container maxWidth="md" sx={{display: "flex", flexDirection: "column", alignItems: "center", paddingLeft: 0, paddingRight: 0}} className={`${transitionStage}`} onAnimationEnd={animate}>
+    <Container maxWidth="md" className={`mapa-brasil ${transitionStage}`} onAnimationEnd={animate}>
         <Routes location={displayLocation}>
             <Route path="/" element={
             <>
@@ -112,13 +113,13 @@ function Content() {
                     description={"Um país plural cheio de cores, culturas e sabores."}
                     name={"Banca do Ramon"}
                     type={"article"} />
-                <Typography variant="p" align={'center'} style={{fontSize: '20px', color: '#fff', marginTop: '12px', fontFamily: "Inter Variable, sans-serif", background: "none"}}>
+                <Typography variant="body1" className={"mapa-brasil-texto"}>
                     Um país plural cheio de cores, culturas e sabores.
                 </Typography>
-                <Typography variant="p" align={'center'} style={{fontSize: '20px', color: '#fff', marginTop: '12px', fontFamily: "Inter Variable, sans-serif", background: "none"}}>
+                <Typography variant="body1" className={"mapa-brasil-texto"}>
                     E para homenagear nossos pratos típicos, criamos um material que vai te ajudar a visitar o Brasil sem sair da cozinha.
                 </Typography>                
-                <Typography variant="p" align={'center'} style={{fontSize: '20px', color: '#fff', marginTop: '12px', fontFamily: "Inter Variable, sans-serif", background: "none"}}>
+                <Typography variant="body1" className={"mapa-brasil-texto"}>
                     Selecione uma região no mapa
                 </Typography>
                 <Brasil />
@@ -132,7 +133,7 @@ function Content() {
                     name={"Banca do Ramon"}
                     type={"article"} />
                 <RegiaoNorte/>
-                <Typography variant="p" align={'center'} style={{fontSize: '20px', color: '#fff', marginTop: '12px', fontFamily: "Inter Variable, sans-serif", position: "absolute", background: "none"}}>Selecione um estado</Typography>
+                <Typography variant="body1" className={"mapa-estado-texto"}>Selecione um estado</Typography>
             </>
             } />    
             <Route path="/nordeste" element={
@@ -143,7 +144,7 @@ function Content() {
                     name={"Banca do Ramon"}
                     type={"article"} />
                 <RegiaoNordeste/>
-                <Typography variant="p" align={'center'} style={{fontSize: '20px', color: '#fff', marginTop: '12px', fontFamily: "Inter Variable, sans-serif", position: "absolute", background: "none"}}>Selecione um estado</Typography>
+                <Typography variant="body1" className={"mapa-estado-texto"}>Selecione um estado</Typography>
             </>
             } />   
             <Route path="/centro-oeste" element={
@@ -154,7 +155,7 @@ function Content() {
                     name={"Banca do Ramon"}
                     type={"article"} />            
                 <RegiaoCentroOeste/>
-                <Typography variant="p" align={'center'} style={{fontSize: '20px', color: '#fff', marginTop: '12px', fontFamily: "Inter Variable, sans-serif", position: "absolute", background: "none"}}>Selecione um estado</Typography>
+                <Typography variant="body1" className={"mapa-estado-texto"}>Selecione um estado</Typography>
             </>
             } />   
             <Route path="/sudeste" element={
@@ -165,7 +166,7 @@ function Content() {
                     name={"Banca do Ramon"}
                     type={"article"} />            
                 <RegiaoSudeste/>
-                <Typography variant="p" align={'center'} style={{fontSize: '20px',color: '#fff', marginTop: '12px', fontFamily: "Inter Variable, sans-serif", position: "absolute", background: "none"}}>Selecione um estado</Typography>
+                <Typography variant="body1" className={"mapa-estado-texto"}>Selecione um estado</Typography>
             </>
             } />   
             <Route path="/sul" element={
@@ -176,47 +177,47 @@ function Content() {
                     name={"Banca do Ramon"}
                     type={"article"} />            
                 <RegiaoSul/>
-                <Typography variant="p" align={'center'} style={{fontSize: '20px', color: '#fff', marginTop: '12px', fontFamily: "Inter Variable, sans-serif", position: "absolute", background: "none"}}>Selecione um estado</Typography>
+                <Typography variant="body1" className={"mapa-estado-texto"}>Selecione um estado</Typography>
             </>
             } />   
 
         </Routes>
     </Container>
 
-    <main className={`${transitionStage}`} onAnimationEnd={animate} style={{display: "flex", flexDirection: "column", justifyContent: "center", width: "100vw", position: "absolute", width: "100%", top: "0px", backgroundColor: "transparent"}}>
+    <main className={`${transitionStage}`} onAnimationEnd={animate}>
         <Routes location={displayLocation}>
 
-            <Route path="/pr" element={<ReceitaPR/>} />   
-            <Route path="/sc" element={<ReceitaSC/>} />   
-            <Route path="/rs" element={<ReceitaRS/>} />   
+            <Route path="/df" element={<ReceitaDF/>} />
+            <Route path="/go" element={<ReceitaGO/>} />
+            <Route path="/ms" element={<ReceitaMS/>} />
+            <Route path="/mt" element={<ReceitaMT/>} />
 
-            <Route path="/go" element={<ReceitaGO/>} />   
-            <Route path="/mt" element={<ReceitaMT/>} />   
-            <Route path="/ms" element={<ReceitaMS/>} />   
-            <Route path="/df" element={<ReceitaDF/>} />   
+            <Route path="/al" element={<ReceitaAL/>} />
+            <Route path="/ba" element={<ReceitaBA/>} />
+            <Route path="/ce" element={<ReceitaCE/>} />
+            <Route path="/ma" element={<ReceitaMA/>} />
+            <Route path="/pb" element={<ReceitaPB/>} />
+            <Route path="/pe" element={<ReceitaPE/>} />
+            <Route path="/pi" element={<ReceitaPI/>} />
+            <Route path="/rn" element={<ReceitaRN/>} />
+            <Route path="/se" element={<ReceitaSE/>} />
+
+            <Route path="/ac" element={<ReceitaAC/>} />
+            <Route path="/am" element={<ReceitaAM/>} />
+            <Route path="/ap" element={<ReceitaAP/>} />
+            <Route path="/pa" element={<ReceitaPA/>} />
+            <Route path="/ro" element={<ReceitaRO/>} />
+            <Route path="/rr" element={<ReceitaRR/>} />
+            <Route path="/to" element={<ReceitaTO/>} />
 
             <Route path="/es" element={<ReceitaES/>} />   
             <Route path="/mg" element={<ReceitaMG/>} />   
             <Route path="/rj" element={<ReceitaRJ/>} />   
-            <Route path="/sp" element={<ReceitaSP/>} />   
+            <Route path="/sp" element={<ReceitaSP/>} />
 
-            <Route path="/am" element={<ReceitaAM/>} />   
-            <Route path="/pa" element={<ReceitaPA/>} />   
-            <Route path="/ac" element={<ReceitaAC/>} />   
-            <Route path="/ap" element={<ReceitaAP/>} />   
-            <Route path="/ro" element={<ReceitaRO/>} />   
-            <Route path="/rr" element={<ReceitaRR/>} />   
-            <Route path="/to" element={<ReceitaTO/>} />   
-
-            <Route path="/al" element={<ReceitaAL/>} />   
-            <Route path="/ba" element={<ReceitaBA/>} />   
-            <Route path="/ce" element={<ReceitaCE/>} />   
-            <Route path="/ma" element={<ReceitaMA/>} />   
-            <Route path="/pi" element={<ReceitaPI/>} />   
-            <Route path="/pe" element={<ReceitaPE/>} />   
-            <Route path="/pb" element={<ReceitaPB/>} />   
-            <Route path="/rn" element={<ReceitaRN/>} />   
-            <Route path="/se" element={<ReceitaSE/>} />   
+            <Route path="/pr" element={<ReceitaPR/>} />
+            <Route path="/rs" element={<ReceitaRS/>} />
+            <Route path="/sc" element={<ReceitaSC/>} />
 
         </Routes>
     </main>
