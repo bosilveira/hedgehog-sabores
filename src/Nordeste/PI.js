@@ -35,7 +35,7 @@ export default function ReceitaPI() {
                 </Typography>
             </Box>
 
-            <Box className={"receita-titulo nordeste"}>
+            <Box className={"ingredientes nordeste"}>
                 <img src={Icone} alt={""}/>
                 <Typography variant="h3">
                     Ingredientes
