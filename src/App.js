@@ -94,7 +94,7 @@ function Sabores() {
             <header>
                 <Routes location={displayLocation}>
                     <Route path="*" element={
-                        <Container maxWidth="md">
+                        <Container maxWidth="sm">
                             <Box className={"brasil-header"}>
                                 <Link to="/">
                                     <img className={"logo"} src={Logo} alt={"O Que o Brasil tem de ... + Delicioso"}/>
@@ -106,7 +106,7 @@ function Sabores() {
                 </Routes>
             </header>
 
-            <Container maxWidth="md" className={`mapa-brasil ${transitionStage}`} onAnimationEnd={animate}>
+            <Container maxWidth="sm" className={`mapa-brasil ${transitionStage}`} onAnimationEnd={animate}>
                 <Routes location={displayLocation}>
                     <Route path="/" element={
                         <>
@@ -115,14 +115,14 @@ function Sabores() {
                                 description={"Um país plural cheio de cores, culturas e sabores."}
                                 name={"Banca do Ramon"}
                                 type={"article"}/>
-                            <Typography variant="body1" className={"mapa-brasil-texto"}>
+                            <Typography variant="body1">
                                 Um país plural cheio de cores, culturas e sabores.
                             </Typography>
-                            <Typography variant="body1" className={"mapa-brasil-texto"}>
+                            <Typography variant="body1">
                                 E para homenagear nossos pratos típicos, criamos um material que vai te ajudar a visitar
                                 o Brasil sem sair da cozinha.
                             </Typography>
-                            <Typography variant="body1" className={"mapa-brasil-texto"}>
+                            <Typography variant="body1">
                                 Selecione uma região no mapa
                             </Typography>
                             <Brasil/>
@@ -135,8 +135,8 @@ function Sabores() {
                                 description={"O Que o Brasil tem de... + Delicioso."}
                                 name={"Banca do Ramon"}
                                 type={"article"}/>
+                            <Typography variant="body1">Selecione um estado</Typography>
                             <RegiaoNorte/>
-                            <Typography variant="body1" className={"mapa-estado-texto"}>Selecione um estado</Typography>
                         </>
                     }/>
                     <Route path="/nordeste" element={
@@ -188,45 +188,45 @@ function Sabores() {
             </Container>
 
             <main className={`${transitionStage}`} onAnimationEnd={animate}>
-                <Routes location={displayLocation}>
+                <Container maxWidth="sm" className={"receita"}>
+                    <Routes location={displayLocation}>
 
-                    <Route path="/df" element={<ReceitaDF/>}/>
-                    <Route path="/go" element={<ReceitaGO/>}/>
-                    <Route path="/ms" element={<ReceitaMS/>}/>
-                    <Route path="/mt" element={<ReceitaMT/>}/>
+                        <Route path="/df" element={<ReceitaDF/>}/>
+                        <Route path="/go" element={<ReceitaGO/>}/>
+                        <Route path="/ms" element={<ReceitaMS/>}/>
+                        <Route path="/mt" element={<ReceitaMT/>}/>
 
-                    <Route path="/al" element={<ReceitaAL/>}/>
-                    <Route path="/ba" element={<ReceitaBA/>}/>
-                    <Route path="/ce" element={<ReceitaCE/>}/>
-                    <Route path="/ma" element={<ReceitaMA/>}/>
-                    <Route path="/pb" element={<ReceitaPB/>}/>
-                    <Route path="/pe" element={<ReceitaPE/>}/>
-                    <Route path="/pi" element={<ReceitaPI/>}/>
-                    <Route path="/rn" element={<ReceitaRN/>}/>
-                    <Route path="/se" element={<ReceitaSE/>}/>
+                        <Route path="/al" element={<ReceitaAL/>}/>
+                        <Route path="/ba" element={<ReceitaBA/>}/>
+                        <Route path="/ce" element={<ReceitaCE/>}/>
+                        <Route path="/ma" element={<ReceitaMA/>}/>
+                        <Route path="/pb" element={<ReceitaPB/>}/>
+                        <Route path="/pe" element={<ReceitaPE/>}/>
+                        <Route path="/pi" element={<ReceitaPI/>}/>
+                        <Route path="/rn" element={<ReceitaRN/>}/>
+                        <Route path="/se" element={<ReceitaSE/>}/>
 
-                    <Route path="/ac" element={<ReceitaAC/>}/>
-                    <Route path="/am" element={<ReceitaAM/>}/>
-                    <Route path="/ap" element={<ReceitaAP/>}/>
-                    <Route path="/pa" element={<ReceitaPA/>}/>
-                    <Route path="/ro" element={<ReceitaRO/>}/>
-                    <Route path="/rr" element={<ReceitaRR/>}/>
-                    <Route path="/to" element={<ReceitaTO/>}/>
+                        <Route path="/ac" element={<ReceitaAC/>}/>
+                        <Route path="/am" element={<ReceitaAM/>}/>
+                        <Route path="/ap" element={<ReceitaAP/>}/>
+                        <Route path="/pa" element={<ReceitaPA/>}/>
+                        <Route path="/ro" element={<ReceitaRO/>}/>
+                        <Route path="/rr" element={<ReceitaRR/>}/>
+                        <Route path="/to" element={<ReceitaTO/>}/>
 
-                    <Route path="/es" element={<ReceitaES/>}/>
-                    <Route path="/mg" element={<ReceitaMG/>}/>
-                    <Route path="/rj" element={<ReceitaRJ/>}/>
-                    <Route path="/sp" element={<ReceitaSP/>}/>
+                        <Route path="/es" element={<ReceitaES/>}/>
+                        <Route path="/mg" element={<ReceitaMG/>}/>
+                        <Route path="/rj" element={<ReceitaRJ/>}/>
+                        <Route path="/sp" element={<ReceitaSP/>}/>
 
-                    <Route path="/pr" element={<ReceitaPR/>}/>
-                    <Route path="/rs" element={<ReceitaRS/>}/>
-                    <Route path="/sc" element={<ReceitaSC/>}/>
+                        <Route path="/pr" element={<ReceitaPR/>}/>
+                        <Route path="/rs" element={<ReceitaRS/>}/>
+                        <Route path="/sc" element={<ReceitaSC/>}/>
 
-                </Routes>
+                    </Routes>
+                </Container>
             </main>
 
         </>
-
-
-    );
+    )
 }
