@@ -16,6 +16,10 @@ header * {
     padding-right: 0;
 }
 
+.App div {
+    padding: 0;
+}
+
 .brasil-header {
     position: relative;
     width: 100%;
@@ -29,7 +33,7 @@ header * {
 
 .logo {
     max-width: 300px;
-    margin-left: 8px;
+    margin-left: 16px;
     width: 80%;
 }
 
@@ -78,9 +82,8 @@ main {
     background-color: transparent;
 }
 
-main * {
+main .receita {
     padding: 0;
-    margin: 0;
 }
 
 .fadeIn {

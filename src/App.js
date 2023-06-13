@@ -17,7 +17,7 @@ import Container from '@mui/material/Container';
 
 import SEO from "./SEO";
 
-import Logo from './logo.svg';
+import Logo from './logo.png';
 import Bookmark from './Brasil-bookmark.svg';
 
 import Brasil from "./Brasil";
