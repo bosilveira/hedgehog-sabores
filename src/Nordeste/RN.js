@@ -84,11 +84,6 @@ export default function ReceitaRN() {
                     02.
                 </Typography>
                 <Typography variant="body1">
-                    Em uma panela, coloque todos os temperos para refogar.
-                    Depois, acrescente o sarapatel, até que ele fique levemente dourado, e o pimentão.
-                    Adicione cerca de dois litros de água, coloque a tampa da panela e deixe cozinhar até reduzir a água.
-                </Typography>
-                <Typography variant="body1">
                     Deixe secar e, quando o arroz estiver quase cozido, acrescente aos poucos o leite até o arroz terminar seu cozimento.
                 </Typography>
             </Box>

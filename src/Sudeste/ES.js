@@ -72,6 +72,9 @@ export default function ReceitaES() {
                 <Typography variant="body1">
                     ½ xícara de azeite de oliva
                 </Typography>
+                <Typography variant="body1">
+                    Óleo de soja
+                </Typography>
             </Box>
 
             <Box className={"preparo-top sudeste"}>
