@@ -92,7 +92,16 @@ function Sabores() {
 
     return (
         <>
+            <SEO
+                title={"O Que o Brasil tem de... + Delicioso | Banca do Ramon"}
+                description={"Descubra um país cheio de cores, culturas e sabores. Acesse nosso conteúdo especial e visite o Brasil sem sair da cozinha. Confira!"}
+                themeColor={"#1E1E1E"}
+                name={"Banca do Ramon"}
+                type={"article"}
+                canonical={"https://blog.bancadoramon.com.br/o-que-o-brasil-tem-de-mais-gostoso"}/>
+
             <header>
+
                 <Routes location={displayLocation}>
                     <Route path="*" element={
                         <Container maxWidth="sm">
@@ -111,11 +120,6 @@ function Sabores() {
                 <Routes location={displayLocation}>
                     <Route path="/" element={
                         <>
-                            <SEO
-                                title={"O Que o Brasil tem de... + Delicioso"}
-                                description={"Um país plural cheio de cores, culturas e sabores."}
-                                name={"Banca do Ramon"}
-                                type={"article"}/>
                             <Typography variant="body1">
                                 Um país plural cheio de cores, culturas e sabores.
                             </Typography>
@@ -131,55 +135,30 @@ function Sabores() {
                     }/>
                     <Route path="/norte" element={
                         <>
-                            <SEO
-                                title={"Região Norte"}
-                                description={"O Que o Brasil tem de... + Delicioso."}
-                                name={"Banca do Ramon"}
-                                type={"article"}/>
                             <Typography variant="body1">Selecione um estado</Typography>
                             <RegiaoNorte/>
                         </>
                     }/>
                     <Route path="/nordeste" element={
                         <>
-                            <SEO
-                                title={"Região Nordeste"}
-                                description={"O Que o Brasil tem de... + Delicioso."}
-                                name={"Banca do Ramon"}
-                                type={"article"}/>
                             <RegiaoNordeste/>
                             <Typography variant="body1" className={"mapa-estado-texto"}>Selecione um estado</Typography>
                         </>
                     }/>
                     <Route path="/centro-oeste" element={
                         <>
-                            <SEO
-                                title={"Região Centro-Oeste"}
-                                description={"O Que o Brasil tem de... + Delicioso."}
-                                name={"Banca do Ramon"}
-                                type={"article"}/>
                             <RegiaoCentroOeste/>
                             <Typography variant="body1" className={"mapa-estado-texto"}>Selecione um estado</Typography>
                         </>
                     }/>
                     <Route path="/sudeste" element={
                         <>
-                            <SEO
-                                title={"Região Sudeste"}
-                                description={"O Que o Brasil tem de... + Delicioso."}
-                                name={"Banca do Ramon"}
-                                type={"article"}/>
                             <RegiaoSudeste/>
                             <Typography variant="body1" className={"mapa-estado-texto"}>Selecione um estado</Typography>
                         </>
                     }/>
                     <Route path="/sul" element={
                         <>
-                            <SEO
-                                title={"Região Sul"}
-                                description={"O Que o Brasil tem de... + Delicioso."}
-                                name={"Banca do Ramon"}
-                                type={"article"}/>
                             <RegiaoSul/>
                             <Typography variant="body1" className={"mapa-estado-texto"}>Selecione um estado</Typography>
                         </>
