@@ -98,7 +98,7 @@ function Sabores() {
                 themeColor={"#1E1E1E"}
                 name={"Banca do Ramon"}
                 type={"article"}
-                canonical={"https://blog.bancadoramon.com.br/o-que-o-brasil-tem-de-mais-gostoso"}/>
+                canonical={"https://blog.bancadoramon.com.br/o-que-o-brasil-tem-de-mais-delicioso"}/>
 
             <header>
 
