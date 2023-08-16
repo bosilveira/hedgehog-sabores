@@ -41,34 +41,40 @@ export default function ReceitaPB() {
                     Ingredientes
                 </Typography>
                 <Typography variant="body1">
-                    250g de charque
+                    300g de carne de sol ou charque
                 </Typography>
                 <Typography variant="body1">
-                    01 xícara de chá de feijão fradinho
+                    250g de feijão verde ou feijão fradinho
                 </Typography>
                 <Typography variant="body1">
-                    200g de bacon
+                    250g de arroz
                 </Typography>
                 <Typography variant="body1">
-                    01 linguiça calabresa
+                    120g de linguiça calabresa
                 </Typography>
                 <Typography variant="body1">
-                    04 xícaras de chá de arroz branco
+                    100g de bacon
+                </Typography>
+                <Typography variant="body1">
+                    150g de queijo coalho
+                </Typography>
+                <Typography variant="body1">
+                    200ml de creme de leite
                 </Typography>
                 <Typography variant="body1">
                     200g de queijo coalho em cubos
                 </Typography>
                 <Typography variant="body1">
-                    01 cebola picada
+                    900 ml de água
                 </Typography>
                 <Typography variant="body1">
-                    02 dentes de alho picados
+                    3 dentes de alho
                 </Typography>
                 <Typography variant="body1">
-                    01 folha de louro
+                    1 cebola
                 </Typography>
                 <Typography variant="body1">
-                    Sal, pimenta dedo-de-moça e salsinha a gosto
+                    Coentro, sal e pimenta do reino a gosto
                 </Typography>
             </Box>
 
@@ -83,9 +89,8 @@ export default function ReceitaPB() {
                     01.
                 </Typography>
                 <Typography variant="body1">
-                    Coloque de molho o charque e o feijão em tigelas distintas por 24 horas.
-                    A água do charque deve ser trocada periodicamente.
-                    No dia seguinte, cozinhe o feijão e o charque. Reserve.
+                    No dia anterior ao preparo, coloque de molho o charque e o feijão em tigelas diferentes, trocando a água de vez em quando.
+                    A carne de sol não precisa ser dessalgada.
                 </Typography>
             </Box>
 
@@ -94,13 +99,8 @@ export default function ReceitaPB() {
                     02.
                 </Typography>
                 <Typography variant="body1">
-                    Em uma panela, frite o bacon. Acrescente cebola e alho, refogue e cozinhe o arroz.
-                    Junte o feijão, o charque e o louro e cubra com água.
-                    Deixe cozinhar até secar.
-                    Adicione o queijo coalho e tempere com sal, pimenta e salsinha.
-                </Typography>
-                <Typography variant="body1">
-                    Finalize acrescentando o coentro.
+                    Em uma panela grande, doure o bacon, acrescente o alho, a cebola e deixe refogar.
+                    Acrescente a carne de sol ou o charque e a calabresa e refogue mais uns minutos.
                 </Typography>
             </Box>
 
@@ -109,8 +109,27 @@ export default function ReceitaPB() {
                     03.
                 </Typography>
                 <Typography variant="body1">
-                    Em outra panela, cozinhe a calabresa cortada em rodelas.
-                    Acrescente ao restante da receita e deixe cozinhar por mais alguns minutos antes de servir.
+                    Junte o arroz, o feijão, o sal e os temperos, misturando bem.
+                    Acrescente a água e deixe cozinhar.
+                </Typography>
+            </Box>
+
+            <Box className={"preparo-body-right"}>
+                <Typography variant="body1">
+                    04.
+                </Typography>
+                <Typography variant="body1">
+                    Quando o arroz estiver cozido, antes que toda a água seque, coloque o creme de leite, o queijo coalho e o coentro.
+                    O resultado fica bem cremoso!
+                </Typography>
+            </Box>
+
+            <Box className={"preparo-body-left"}>
+                <Typography variant="body1">
+                    05.
+                </Typography>
+                <Typography variant="body1">
+                    Você pode reservar um pouco do bacon e da calabresa refogadas para servir por cima do arroz.
                 </Typography>
             </Box>
 
