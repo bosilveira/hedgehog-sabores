@@ -65,7 +65,7 @@ export default function ReceitaPB() {
                     200g de queijo coalho em cubos
                 </Typography>
                 <Typography variant="body1">
-                    900 ml de água
+                    900ml de água
                 </Typography>
                 <Typography variant="body1">
                     3 dentes de alho
@@ -120,6 +120,8 @@ export default function ReceitaPB() {
                 </Typography>
                 <Typography variant="body1">
                     Quando o arroz estiver cozido, antes que toda a água seque, coloque o creme de leite, o queijo coalho e o coentro.
+                </Typography>
+                <Typography variant="body1">
                     O resultado fica bem cremoso!
                 </Typography>
             </Box>
