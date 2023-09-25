@@ -73,6 +73,7 @@ import {IconButton} from "@mui/material";
 import {faAngleUp, faEnvelope, faEnvelopeOpen} from "@fortawesome/free-solid-svg-icons";
 
 import Logotipo from "./logotipo.webp";
+import LogotipoPrincipal from "./xlogo-branco.webp"
 import Jamil from "./Jamil.jpg"
 import Stock01 from "./stock01.jpg";
 import Stock02 from "./stock02.jpg";
@@ -132,18 +133,6 @@ function Sabores() {
                 </div>
             </div>
 
-            <div className="inner-header">
-                <div className="container">
-                    <div id="logo">
-                        <h1>
-                            <a href="/"><img src={Logotipo} /></a>
-                        </h1>
-                    </div>
-                    <div class="header-slogan">
-                        <p class="header-slogan-text">O MELHOR PARA SUA MESA DESDE 1933</p>
-                    </div>
-                </div>
-            </div>
 
             <header>
 
